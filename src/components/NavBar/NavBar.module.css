@@ -1,5 +1,13 @@
-.nav { 
-    display: flex;
-    justify-content: space-between;
-    
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+.routes {
+	display: flex;
+	justify-content: space-evenly;
+    width: 25%;
+}
+.logo {
+	display: flex;
+	
 }
