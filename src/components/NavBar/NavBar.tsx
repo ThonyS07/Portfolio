@@ -1,4 +1,4 @@
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
+import { ThemeSwitcher } from "@/components/ThemeSwitcher/ThemeSwitcher";
 import Link from "next/link";
 import styles from "./NavBar.module.css";
 
