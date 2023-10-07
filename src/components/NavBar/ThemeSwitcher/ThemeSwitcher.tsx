@@ -9,8 +9,7 @@ import SunIcon  from "./SunIcon";
 
 
 
-
-export function ThemeSwitcher() {
+const ThemeSwitcher = ()=> {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
@@ -26,7 +25,7 @@ export function ThemeSwitcher() {
 
 	return (
 		<Switch
-			
+			 
 			size='lg'
 			color='warning'
 			onChange={handleThemeChange}
@@ -37,3 +36,5 @@ export function ThemeSwitcher() {
 	
 	);
 }
+
+export default ThemeSwitcher
