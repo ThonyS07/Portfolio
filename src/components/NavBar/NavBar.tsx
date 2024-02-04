@@ -1,83 +1,61 @@
+"use client";
 import ThemeSwitcher from "@/components/NavBar/ThemeSwitcher/ThemeSwitcher";
 import Link from "next/link";
-import React from "react";
-import {
-	Navbar,
-	NavbarBrand,
-	NavbarContent,
-	NavbarItem,
-} from "@nextui-org/navbar";
-
-
+import React, { useState } from "react";
+import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
+import Logo from "./Logo";
+import { Tabs } from "@/Format/Tabs";
 
 const NavBar = () => {
+	const [activeSection, setActiveSection] = useState("");
+
+	const handleSectionClick = (sectionId: string) => {
+		setActiveSection(sectionId);
+	};
 
 	return (
 		<Navbar
+			className='dark:border-blanco border-negro1'
 			isBordered
 			isBlurred
-			maxWidth='xl'
-			
-			>
+			maxWidth='xl'>
 			<NavbarBrand>
 				<Link color='foreground' href='/'>
-					LOGO
+					<Logo />
 				</Link>
 			</NavbarBrand>
-			<NavbarContent className='hidden sm:flex gap-4' justify='center'>
-				<NavbarItem>
-					<Link color='foreground' href='/about'>
-						About
-					</Link>
-				</NavbarItem>
-				<NavbarItem>
-					<Link color='foreground' href='/projects'>
-						Projects
-					</Link>
-				</NavbarItem>
-				<NavbarItem>
-					<Link color='foreground' href='/contact'>
-						Contact
-					</Link>
-				</NavbarItem>
-			</NavbarContent>
+			<div className='w-8/12'>
+				<NavbarContent className='hidden sm:flex gap-4' justify='start'>
+					<Tabs
+						activeSection={activeSection}
+						onSectionClick={handleSectionClick}>
+						home
+					</Tabs>
+					<Tabs
+						activeSection={activeSection}
+						onSectionClick={handleSectionClick}>
+						about
+					</Tabs>
+					<Tabs
+						activeSection={activeSection}
+						onSectionClick={handleSectionClick}>
+						projects
+					</Tabs>
+					<Tabs
+						activeSection={activeSection}
+						onSectionClick={handleSectionClick}>
+						contact
+					</Tabs>
+				</NavbarContent>
+			</div>
 			<NavbarContent justify='end'>
-				<NavbarItem>
-					<ThemeSwitcher />
-				</NavbarItem>
-				{/* <NavbarItem>
-					<Button as={Link} color='primary' href='#' variant='flat'>
-						Sign Up
-					</Button>
-				</NavbarItem> */}
+				<ThemeSwitcher />
+				<Link color='foreground' href='/'>
+					DESCARGAR CV
+				</Link>
 			</NavbarContent>
 		</Navbar>
 	);
-}
-
-
-
-
-// const NavBar = () => {
-
-
-
-
-
-// 	return (
-// 		<div className={styles.nav}>
-// 			<div className={styles.logo}>
-// 				<Link href='/'>logo</Link>
-// 			</div>
-// 			<div className={styles.routes}>
-// 				<Link href='/about'>About</Link>
-// 				<Link href='/projects'>Projects</Link>
-// 				<Link href='/contact'>Contact</Link>
-// 			</div>
-
-// 			<ThemeSwitcher />
-// 		</div>
-// 	);
-// };
+};
 
 export default NavBar;

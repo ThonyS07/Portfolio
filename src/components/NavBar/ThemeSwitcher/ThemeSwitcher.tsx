@@ -3,13 +3,15 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Switch } from "@nextui-org/react";
 import MoonIcon  from "./MoonIcon";
 import SunIcon  from "./SunIcon";
+import SwitchS from "@/components/Switches/SwitchS";
 
 
 
-const ThemeSwitcher = ()=> {
+const ThemeSwitcher = () => {
+	
+
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
@@ -18,22 +20,18 @@ const ThemeSwitcher = ()=> {
     }, []);
     
     const handleThemeChange = () => {
-        setTheme(theme === "light" ? "dark" : "light");
+		setTheme(theme === "light" ? "dark" : "light");
+		
+		
     }
 
 	if (!mounted) return null;
 
 	return (
-		<Switch
-			 
-			size='lg'
-			color='warning'
-			onChange={handleThemeChange}
-			endContent={<MoonIcon />}
-			startContent={<SunIcon />} 
-	
-			/>
-	
+		<div>
+			<SwitchS onClick={handleThemeChange}>{theme==="dark"?<MoonIcon/>:<SunIcon/> }</SwitchS>
+		</div>
+
 	);
 }
 
