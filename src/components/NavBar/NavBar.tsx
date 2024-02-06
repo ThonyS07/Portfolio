@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 import Logo from "./Logo";
-import { Tabs } from "@/Format/Tabs";
+import { Tabs } from "@/format/Tabs";
 
 const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
