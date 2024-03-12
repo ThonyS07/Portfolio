@@ -13,7 +13,6 @@ const HomeContent = () => {
 			</div>
 			<div className='bg-blanco pl-2 w-3/3 h-2/3'>
 				<HomeImage />
-				<ButtonS/>
 			</div>
 			<div className='bg-white'></div>
 		</div>

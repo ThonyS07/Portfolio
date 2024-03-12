@@ -1,16 +1,14 @@
 "use client";
-import ContactWrapper from "@/components/Contact/ContactWrapper";
-import HomeContent from "@/components/HomeContent/HomeContent";
-import NavBar from "@/components/NavBar/NavBar";
-import Profile from "@/components/Profile/Profile";
-import ProjectsWrapper from "@/components/Projects/ProjectsWrapper";
-
+import ContactWrapper from "@/app/components/Contact/ContactWrapper";
+import HomeContent from "@/app/components/HomeContent/HomeContent";
+import NavBar from "@/app/components/NavBar/NavBar";
+import Profile from "@/app/components/Profile/Profile";
+import ProjectsWrapper from "@/app/components/Projects/ProjectsWrapper";
 
 const Home = () => {
-	
 	return (
 		<div>
-			<NavBar/>
+			<NavBar />
 			<section id='home'>
 				<HomeContent />
 			</section>
@@ -18,7 +16,7 @@ const Home = () => {
 				<Profile />
 			</section>
 			<section id='projects'>
-				<ProjectsWrapper/>
+				<ProjectsWrapper />
 			</section>
 			<section id='contact'>
 				<ContactWrapper />

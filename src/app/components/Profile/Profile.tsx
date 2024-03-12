@@ -1,5 +1,5 @@
 import React from "react";
-import Photo from "../../assets/img/Mask group.png";
+import Photo from "@/assets/img/Mask group.png";
 import Image from "next/image";
 import ProfileDescription from "./ProfileDescription";
 

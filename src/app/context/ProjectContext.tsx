@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useState, useContext } from "react";
-import { CreateProject, UpdateProject } from "@/interfaces/Project";
+import { CreateProject, UpdateProject } from "@/app/interfaces/Project";
 import { Project } from "@prisma/client";
 
 export const ProjectContext = createContext<{
@@ -30,7 +30,11 @@ export const useProjects = () => {
 	return context;
 };
 
-export const ProjectsProvider = ({ children }: { children: React.ReactNode }) => {
+export const ProjectsProvider = ({
+	children,
+}: {
+	children: React.ReactNode;
+}) => {
 	const [projects, setProjects] = useState<Project[]>([]);
 	const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 

@@ -1,10 +1,10 @@
 "use client";
-import ThemeSwitcher from "@/components/NavBar/ThemeSwitcher/ThemeSwitcher";
+import ThemeSwitcher from "@/app/components/NavBar/ThemeSwitcher/ThemeSwitcher";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 import Logo from "./Logo";
-import { Tabs } from "@/format/Tabs";
+import { Tabs } from "@/app/format/Tabs";
 
 const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
