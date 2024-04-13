@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/assets/libs/prisma";
+import { prisma } from "@/libs/prisma";
 import { Params } from "@/app/interfaces/Project";
 import { Prisma } from "@prisma/client";
 
@@ -13,7 +13,7 @@ export const GET = async (request: Request, { params }: Params) => {
 		});
 		return NextResponse.json(projects);
 	} catch (error) {
-		console.log(error);
+		
 		if (error instanceof Error) {
 			return NextResponse.json(
 				{
