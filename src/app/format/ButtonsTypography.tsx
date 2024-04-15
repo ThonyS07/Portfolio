@@ -5,7 +5,7 @@ import styles from "./Typography.module.css";
 export const ButtonXL: React.FC<TypographyProps> = ({ children }) => {
 	return (
 		<p
-			className={`${styles.boldFont} text-left tracking-normal text-xl text-black`}>
+			className={`${styles.boldFont} text-left tracking-normal text-xl`}>
 			{children}
 		</p>
 	);
@@ -13,7 +13,7 @@ export const ButtonXL: React.FC<TypographyProps> = ({ children }) => {
 export const ButtonL: React.FC<TypographyProps> = ({ children }) => {
 	return (
 		<p
-			className={`${styles.boldFont} text-left tracking-normal text-lg text-black`}>
+			className={`${styles.boldFont} text-left tracking-normal text-lg `}>
 			{children}
 		</p>
 	);
@@ -21,7 +21,7 @@ export const ButtonL: React.FC<TypographyProps> = ({ children }) => {
 export const ButtonM: React.FC<TypographyProps> = ({ children }) => {
 	return (
 		<p
-			className={`${styles.boldFont} text-left tracking-normal text-base text-black`}>
+			className={`${styles.boldFont} text-left tracking-normal text-base `}>
 			{children}
 		</p>
 	);
@@ -29,7 +29,7 @@ export const ButtonM: React.FC<TypographyProps> = ({ children }) => {
 export const ButtonS: React.FC<TypographyProps> = ({ children }) => {
 	return (
 		<p
-			className={`${styles.boldFont} text-left tracking-normal text-sm text-black`}>
+			className={`${styles.boldFont} text-left tracking-normal text-sm `}>
 			{children}
 		</p>
 	);
@@ -37,8 +37,9 @@ export const ButtonS: React.FC<TypographyProps> = ({ children }) => {
 export const ButtonXS: React.FC<TypographyProps> = ({ children }) => {
 	return (
 		<p
-			className={`${styles.boldFont} text-left tracking-normal text-xs text-black`}>
+			className={`${styles.boldFont} text-left tracking-normal text-xs `}>
 			{children}
 		</p>
 	);
 };
+

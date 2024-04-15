@@ -9,6 +9,7 @@ const config: Config = {
 		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
+	
 		colors: {
 			disable: "#A9AFD9",
 			green:"#389E0D",

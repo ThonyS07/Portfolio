@@ -4,7 +4,9 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 import Logo from "./Logo";
-import { Tabs } from "@/app/format/Tabs";
+import { Tabs } from "@/app/components/NavBar/Tabs/Tabs";
+import Button from "../Buttons/Button";
+import DownloadIcon from "./DownloadIcon";
 
 const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
@@ -15,17 +17,17 @@ const NavBar = () => {
 
 	return (
 		<Navbar
-			className='dark:border-blanco border-negro1'
+			className='dark:border-blanco border-negro1  min-[360px]:h-[56px] md:h-[64px] min-[1360px]:py-[19px] min-[1360px]:px-[104px] lg:h-[80px] lg:py-[19px] lg:px-[48px]'
 			isBordered
 			isBlurred
 			maxWidth='xl'>
-			<NavbarBrand>
+			<NavbarBrand >
 				<Link color='foreground' href='/'>
 					<Logo />
 				</Link>
 			</NavbarBrand>
 			<div className='w-8/12'>
-				<NavbarContent className='hidden sm:flex gap-4' justify='start'>
+				<NavbarContent className='hidden lg:flex gap-4' justify='start'>
 					<Tabs
 						activeSection={activeSection}
 						onSectionClick={handleSectionClick}>
@@ -34,26 +36,31 @@ const NavBar = () => {
 					<Tabs
 						activeSection={activeSection}
 						onSectionClick={handleSectionClick}>
-						about
+						about me
 					</Tabs>
 					<Tabs
 						activeSection={activeSection}
 						onSectionClick={handleSectionClick}>
-						projects
+						my projects
 					</Tabs>
 					<Tabs
 						activeSection={activeSection}
 						onSectionClick={handleSectionClick}>
-						contact
+						contact me
 					</Tabs>
 				</NavbarContent>
 			</div>
-			<NavbarContent justify='end'>
-				<ThemeSwitcher />
-				<Link color='foreground' href='/'>
-					DESCARGAR CV
-				</Link>
-			</NavbarContent>
+			<div>
+				<NavbarContent justify='end'>
+					<ThemeSwitcher />
+					<div className='lg:hidden'>
+						<p>hamburguesa</p>
+					</div>
+					<div className='hidden lg:flex'>
+						<Button text={`Descargar CV `} size='m'></Button>
+					</div>
+				</NavbarContent>
+			</div>
 		</Navbar>
 	);
 };
