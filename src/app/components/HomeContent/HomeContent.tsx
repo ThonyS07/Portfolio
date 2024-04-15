@@ -1,9 +1,7 @@
 import React from "react";
 import HomeDescription from "./HomeDescription";
 import HomeImage from "./HomeImage";
-import ButtonS from "../Buttons/ButtonS";
-
-
+import ButtonS from "../Buttons/Button";
 
 const HomeContent = () => {
 	return (
@@ -13,6 +11,7 @@ const HomeContent = () => {
 			</div>
 			<div className='bg-blanco pl-2 w-3/3 h-2/3'>
 				<HomeImage />
+				<ButtonS text='Resume' size='s' ></ButtonS>
 			</div>
 			<div className='bg-white'></div>
 		</div>

@@ -3,21 +3,23 @@ import styles from "./progress.module.css";
 import { ProgressProps } from "@/Props/ProgressProps";
 import { useTheme } from "next-themes";
 
-const ProgressWLabelXXS: React.FC<ProgressProps> = ({ value, size }) => {
+const ProgressWLabel: React.FC<ProgressProps> = ({ value, size }) => {
 	const grosor = 0.075 * size;
 	const radius = (size - grosor) / 2;
 	const dashArray = radius * Math.PI * 2;
 	const dashOffset = dashArray - (dashArray * value) / 100;
 	const { theme, setTheme } = useTheme();
+	const color = theme === "dark" ? "#ffffff" : "#1a1d12";
+	console.log(theme);
 	return (
-		<div className=' flex justify-center items-center w-max'>
+		<div className=' flex justify-center items-center w-max '>
 			<svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
 				<circle
 					cx={size / 2}
 					cy={size / 2}
 					r={radius}
 					strokeWidth={grosor}
-					className='fill-none dark:stroke-[#f0f3ff] stroke-[#30344a] '
+					className='fill-none stroke-[#f0f3ff] dark:stroke-[#30344a] '
 				/>
 				<circle
 					cx={size / 2}
@@ -31,14 +33,14 @@ const ProgressWLabelXXS: React.FC<ProgressProps> = ({ value, size }) => {
 					}}
 					transform={`rotate(-90 ${size / 2} ${size / 2})`}
 				/>
-				<p>50 %</p>
 				<text
 					x={size / 2}
 					y={size / 2}
 					dy='0.35em'
 					textAnchor='middle'
 					dominantBaseline='middle'
-					className='w-7 h-5 text-sm font-bold  dark:text-[#ffffff] text-[#30344a]'>
+					fill={`${color}`}
+					className='w-7 h-5 text-sm font-bold'>
 					{value} %
 				</text>
 			</svg>
@@ -46,4 +48,4 @@ const ProgressWLabelXXS: React.FC<ProgressProps> = ({ value, size }) => {
 	);
 };
 
-export default ProgressWLabelXXS;
+export default ProgressWLabel;

@@ -4,7 +4,7 @@ import HomeContent from "@/app/components/HomeContent/HomeContent";
 import NavBar from "@/app/components/NavBar/NavBar";
 import Profile from "@/app/components/Profile/Profile";
 import ProjectsWrapper from "@/app/components/Projects/ProjectsWrapper";
-import ProgressWLabelXXS from "./components/Progress/ProgressWLabelXXS";
+import ButtonXS from "./components/Buttons/Button";
 import ProgressCircle from "./components/Progress/ProgressCircle";
 
 const Home = () => {
@@ -24,9 +24,10 @@ const Home = () => {
 				<ContactWrapper />
 			</section>
 
-			<section>
+			<section className='p-5 justify-between'>
 				<h1>PRUEBAS</h1>
-				<ProgressCircle value={50} size="S" />
+				<ButtonXS text='soy un boton'></ButtonXS>
+				<ProgressCircle size='L' value={50}></ProgressCircle>
 			</section>
 		</div>
 	);
