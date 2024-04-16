@@ -69,11 +69,11 @@ const config: Config = {
 			},
 		},
 		fontSize: {
-			xs: ["12px", "16px"],
-			sm: ["14px", "18px"],
-			base: ["16px", "20px"],
-			lg: ["18px", "22px"],
-			xl: ["20px", "24px"],
+			xs: ["12px", "1.33"],
+			sm: ["14px", "1.29"],
+			base: ["16px", "1.25"],
+			lg: ["18px", "1.22"],
+			xl: ["20px", "1.2"],
 		},
 		fontFamily: {
 			sans: ["lato"],

@@ -8,7 +8,7 @@ import {
 	ButtonXS,
 } from "@/app/format/ButtonsTypography";
 
-const Button = ({ text, onClick, size }: ButtonsProps) => {
+const Button = ({ children, onClick, size }: ButtonsProps) => {
 	let classNames = "";
 	if (size === "S" || size === "s") {
 		classNames = "w-89 h-28 py-[6px] px-[19px] ";
@@ -27,20 +27,28 @@ const Button = ({ text, onClick, size }: ButtonsProps) => {
 	}
 
 	return (
-		<div className="flex justify-center items-center">
+		<div className='flex justify-center items-center'>
 			<button
 				className={`${classNames}  dark:bg-negro1 dark:border-blanco dark:border-1 dark:hover:border-[#9747ff] dark:hover:text-[#a57bf5] dark:disabled:border-[#9747ff] dark:disabled:text-[#6a708c] dark:active:border-[#ccb4fa] dark:active:text-[#ccb4fa] bg-purple1  flex 
 				justify-center items-center text-center rounded-lg hover:bg-purple3 active:bg-purple2 disabled:bg-purple9 flex-row flex-nowrap whitespace-nowrap`}>
 				{size === "S" || size === "s" ? (
-					<ButtonXS>{text}</ButtonXS>
+					<ButtonXS>{children}</ButtonXS>
 				) : size === "M" || size === "m" ? (
-					<ButtonS>{text}</ButtonS>
+					<ButtonS>
+						<span className='inline-block max-w-[100%] overflow-hidden whitespace-nowrap text-ellipsis'>
+							{children}
+						</span>
+					</ButtonS>
 				) : size === "L" || size === "l" ? (
-					<ButtonM>{text}</ButtonM>
+					<ButtonM>
+						
+							{children}
+						
+					</ButtonM>
 				) : size === "XL" || size === "xl" ? (
-					<ButtonL>{text}</ButtonL>
+					<ButtonL>{children}</ButtonL>
 				) : (
-					<ButtonXL>{text}</ButtonXL>
+					<ButtonXL>{children}</ButtonXL>
 				)}
 			</button>
 		</div>

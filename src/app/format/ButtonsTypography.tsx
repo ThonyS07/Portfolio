@@ -21,7 +21,7 @@ export const ButtonL: React.FC<TypographyProps> = ({ children }) => {
 export const ButtonM: React.FC<TypographyProps> = ({ children }) => {
 	return (
 		<p
-			className={`${styles.boldFont} text-left tracking-normal text-base `}>
+			className={`${styles.boldFont} flex text-left tracking-normal text-base `}>
 			{children}
 		</p>
 	);

@@ -6,7 +6,10 @@ import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 import Logo from "./Logo";
 import { Tabs } from "@/app/components/NavBar/Tabs/Tabs";
 import Button from "../Buttons/Button";
-import DownloadIcon from "./DownloadIcon";
+// import DownloadIcon from "./DownloadIcon";
+import Icon from "./Icon";
+import NavBarButton from "./NavBarButton";
+
 
 const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
@@ -14,14 +17,15 @@ const NavBar = () => {
 	const handleSectionClick = (sectionId: string) => {
 		setActiveSection(sectionId);
 	};
-
+	
+	
 	return (
 		<Navbar
 			className='dark:border-blanco border-negro1  min-[360px]:h-[56px] md:h-[64px] min-[1360px]:py-[19px] min-[1360px]:px-[104px] lg:h-[80px] lg:py-[19px] lg:px-[48px]'
 			isBordered
 			isBlurred
 			maxWidth='xl'>
-			<NavbarBrand >
+			<NavbarBrand>
 				<Link color='foreground' href='/'>
 					<Logo />
 				</Link>
@@ -56,8 +60,8 @@ const NavBar = () => {
 					<div className='lg:hidden'>
 						<p>hamburguesa</p>
 					</div>
-					<div className='hidden lg:flex'>
-						<Button text={`Descargar CV `} size='m'></Button>
+					<div>
+						<NavBarButton />
 					</div>
 				</NavbarContent>
 			</div>
