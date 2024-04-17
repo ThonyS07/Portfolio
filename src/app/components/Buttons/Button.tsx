@@ -11,19 +11,19 @@ import {
 const Button = ({ children, onClick, size }: ButtonsProps) => {
 	let classNames = "";
 	if (size === "S" || size === "s") {
-		classNames = "w-89 h-28 py-[6px] px-[19px] ";
+		classNames = "h-28 py-[6px] px-[19px] ";
 	} else if (size === "M" || size === "m") {
 		classNames =
-			"w-100 h-36 py-[9px] px-[18px] ";
+			"h-36 py-[9px] px-[18px] ";
 	} else if (size === "L" || size === "l") {
 		classNames =
-			"w-120 h-42  py-[11px] px-[27px] ";
+			"h-[42px] py-[11px] px-[27px] ";
 	} else if (size === "XL" || size === "xl") {
 		classNames =
-			"w-140 h-48 py-[13px] px-[27px] ";
+			"h-48 py-[13px] px-[27px] ";
 	} else {
 		classNames =
-			"w-159 h-56 py-4 px-[25px] ";
+			"h-56 py-4 px-[25px] ";
 	}
 
 	return (

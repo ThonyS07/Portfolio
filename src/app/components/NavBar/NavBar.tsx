@@ -8,7 +8,8 @@ import { Tabs } from "@/app/components/NavBar/Tabs/Tabs";
 import Button from "../Buttons/Button";
 // import DownloadIcon from "./DownloadIcon";
 import Icon from "./Icon";
-import NavBarButton from "./NavBarButton";
+
+import HamburguerButton from "./MenuIcon";
 
 
 const NavBar = () => {
@@ -55,15 +56,22 @@ const NavBar = () => {
 				</NavbarContent>
 			</div>
 			<div>
-				<NavbarContent justify='end'>
+				{}
+				<NavbarContent
+					className='max-[1024px]:flex max-[1024px]:gap-6 max-[1024px]:w-[110px] max-[1024px]:h-[24px] max-[1024px]:flex-row max-[1024px]:justify-start max-[1024px]:items-start'
+					justify='end'>
 					<ThemeSwitcher />
-					<div className='lg:hidden'>
-						<p>hamburguesa</p>
+					<div className='lg:hidden w-[1px] h-[24px] bg-[#1a1d2c] dark:bg-blanco '>
+						
 					</div>
-					<div>
-						<NavBarButton />
+					<div className='lg:hidden'>
+						<HamburguerButton />
+					</div>
+					<div className='hidden lg:flex'>
+						<Button size="l" >Descargar CV</Button>
 					</div>
 				</NavbarContent>
+				
 			</div>
 		</Navbar>
 	);
