@@ -17,7 +17,7 @@ const Button = ({ children, onClick, size }: ButtonsProps) => {
 			"h-36 py-[9px] px-[18px] ";
 	} else if (size === "L" || size === "l") {
 		classNames =
-			"h-[42px] py-[11px] px-[27px] ";
+			"h-42 py-[11px] px-[27px] ";
 	} else if (size === "XL" || size === "xl") {
 		classNames =
 			"h-48 py-[13px] px-[27px] ";
@@ -35,9 +35,9 @@ const Button = ({ children, onClick, size }: ButtonsProps) => {
 					<ButtonXS>{children}</ButtonXS>
 				) : size === "M" || size === "m" ? (
 					<ButtonS>
-						<span className='inline-block max-w-[100%] overflow-hidden whitespace-nowrap text-ellipsis'>
+						
 							{children}
-						</span>
+						
 					</ButtonS>
 				) : size === "L" || size === "l" ? (
 					<ButtonM>

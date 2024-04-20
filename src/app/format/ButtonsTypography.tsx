@@ -5,7 +5,7 @@ import styles from "./Typography.module.css";
 export const ButtonXL: React.FC<TypographyProps> = ({ children }) => {
 	return (
 		<p
-			className={`${styles.boldFont} text-left tracking-normal text-xl`}>
+			className={`${styles.boldFont} text-left tracking-normal text-xl  `}>
 			{children}
 		</p>
 	);

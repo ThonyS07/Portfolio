@@ -13,7 +13,7 @@ const SwitchS: React.FC<SwitchProps> = ({ children, onClick }) => {
 			<label
 				htmlFor='check'
 				className={classNames(
-					"flex w-38 h-6 rounded-full items-center bg-disable transition-all duration-500 cursor-pointer relative",
+					"flex w-[46px] h-[28px] rounded-full items-center bg-disable transition-all duration-500 cursor-pointer relative",
 					{
 						"bg-green": isSelected,
 					}
@@ -27,9 +27,9 @@ const SwitchS: React.FC<SwitchProps> = ({ children, onClick }) => {
 				/>
 				<span
 					className={classNames(
-						"h-5 w-5 ml-0.5  bg-blanco rounded-full transition-all duration-500 shadow-2xl justify-center items-center flex peer-checked:ml-4",
+						"h-[24px] w-[24px] ml-0.5  bg-blanco rounded-full transition-all duration-500 shadow-2xl justify-center items-center flex peer-checked:ml-7",
 						{
-							"ml-4": isSelected,
+							"ml-7": isSelected,
 						}
 					)}>
 					{children}

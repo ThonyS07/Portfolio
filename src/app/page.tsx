@@ -14,19 +14,19 @@ const Home = () => {
 			<section id='home'>
 				<HomeContent />
 			</section>
-			<section id='about'>
+			<section id='about me'>
 				<Profile />
 			</section>
-			<section id='projects'>
+			<section id='my projects'>
 				<ProjectsWrapper />
 			</section>
-			<section id='contact'>
+			<section id='contact me'>
 				<ContactWrapper />
 			</section>
 
 			<section className='p-5 justify-between'>
 				<h1>PRUEBAS</h1>
-				<ButtonXS text='soy un boton'></ButtonXS>
+				<ButtonXS size="L">HEllo</ButtonXS>
 				<ProgressCircle size='L' value={50}></ProgressCircle>
 			</section>
 		</div>

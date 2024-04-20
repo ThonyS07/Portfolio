@@ -3,13 +3,12 @@ import logo from "@/assets/img/logo.svg";
 
 
 
-import React from "react";
+
 
 const Logo = () => {
 	return (
-		<div className="flex min-[200px]:h-[41]">
-			<Image src={logo} alt='logo' />
-			
+		<div className='flex h-[42px]'>
+			<Image src={logo} alt='logo' width={42} height={40} />
 		</div>
 	);
 };
