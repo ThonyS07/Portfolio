@@ -1,7 +1,4 @@
-
-
-const HamburguerButton = () => {
-
+const PRUEBAicon = () => {
 	return (
 		<div className='h-[24px]'>
 			<button>
@@ -25,4 +22,4 @@ const HamburguerButton = () => {
 	);
 };
 
-export default HamburguerButton;
+export default PRUEBAicon;

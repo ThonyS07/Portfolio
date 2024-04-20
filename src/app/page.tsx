@@ -4,8 +4,7 @@ import HomeContent from "@/app/components/HomeContent/HomeContent";
 import NavBar from "@/app/components/NavBar/NavBar";
 import Profile from "@/app/components/Profile/Profile";
 import ProjectsWrapper from "@/app/components/Projects/ProjectsWrapper";
-import ButtonXS from "./components/Buttons/Button";
-import ProgressCircle from "./components/Progress/ProgressCircle";
+
 
 const Home = () => {
 	return (
@@ -26,8 +25,7 @@ const Home = () => {
 
 			<section className='p-5 justify-between'>
 				<h1>PRUEBAS</h1>
-				<ButtonXS size="L">HEllo</ButtonXS>
-				<ProgressCircle size='L' value={50}></ProgressCircle>
+				
 			</section>
 		</div>
 	);

@@ -4,7 +4,7 @@ import HomeImage from "./HomeImage";
 import ButtonS from "../Buttons/Button";
 import ProgressBar from "../Progress/ProgressBar";
 
-const HomeContent = () => {
+const  HomeContent = () => {
 	return (
 		<div>
 			<ProgressBar level={1} text='Frontend Developer'></ProgressBar>

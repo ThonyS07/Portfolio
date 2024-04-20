@@ -2,6 +2,8 @@ import React from "react";
 import Photo from "@/assets/img/Mask group.png";
 import Image from "next/image";
 import ProfileDescription from "./ProfileDescription";
+import HomeCard from "../Cards/HomeCards/HomeCard";
+import PRUEBAicon from "../Cards/HomeCards/Icons/PRUEBA";
 
 const Profile = () => {
 	return (
@@ -12,7 +14,9 @@ const Profile = () => {
 				width={350}
 				height={350}
 			/></div>
-			<div className="w-2/3"><ProfileDescription/></div>
+			<div className="w-2/3"><ProfileDescription />
+			<HomeCard text='como me gusta asfdkhasldhaskldjsakldjaslkdjsakldjsakld' titulo='hola'><PRUEBAicon></PRUEBAicon></HomeCard>
+			</div>
 			
 			
 
