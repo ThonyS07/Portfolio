@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProfileDescription = () => {
+const AboutMeDescription = () => {
   return (
     <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -14,4 +14,4 @@ const ProfileDescription = () => {
   )
 }
 
-export default ProfileDescription
+export default AboutMeDescription

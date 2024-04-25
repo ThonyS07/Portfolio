@@ -2,31 +2,32 @@
 import ContactWrapper from "@/app/components/Contact/ContactWrapper";
 import HomeContent from "@/app/components/HomeContent/HomeContent";
 import NavBar from "@/app/components/NavBar/NavBar";
-import Profile from "@/app/components/Profile/Profile";
+import AboutMe from "@/app/components/Profile/AboutMe";
 import ProjectsWrapper from "@/app/components/Projects/ProjectsWrapper";
-
+import ProgressWLabelAndName from "@/app/components/Progress/ProgressWLabelAndName";
 
 const Home = () => {
 	return (
 		<div>
 			<NavBar />
-			<section id='home'>
-				<HomeContent />
-			</section>
-			<section id='about me'>
-				<Profile />
-			</section>
-			<section id='my projects'>
-				<ProjectsWrapper />
-			</section>
-			<section id='contact me'>
-				<ContactWrapper />
-			</section>
+			<div className='px-[78px]'>
+				<section id='home'>
+					<HomeContent />
+				</section>
+				<section id='about me'>
+					<AboutMe />
+				</section>
+				<section id='my projects'>
+					<ProjectsWrapper />
+				</section>
+				<section id='contact me'>
+					<ContactWrapper />
+				</section>
 
-			<section className='p-5 justify-between'>
-				<h1>PRUEBAS</h1>
-				
-			</section>
+				<section className='p-5 justify-between'>
+					<h1>PRUEBAS</h1>
+				</section>
+			</div>
 		</div>
 	);
 };

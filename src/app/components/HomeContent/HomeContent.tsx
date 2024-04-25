@@ -7,15 +7,9 @@ import ProgressBar from "../Progress/ProgressBar";
 const  HomeContent = () => {
 	return (
 		<div>
-			<ProgressBar level={1} text='Frontend Developer'></ProgressBar>
-			<div className='flex justify-center items-center h-screen flex-row '>
-				<HomeDescription />
-				<div className='pr-52 bg-negro7 w-1/3 h-2/3'></div>
-				<div className='bg-blanco pl-2 w-3/3 h-2/3'>
-					<HomeImage />
-					<ButtonS size='s'>Resume</ButtonS>
-				</div>
-				<div className='bg-white'></div>
+			
+			<div className='flex  h-screen flex-row '>
+			
 			</div>
 		</div>
 	);
