@@ -13,15 +13,15 @@ const HomeCard = ({
 	titulo: string;
 }) => {
 	return (
-		<div className='w-[312px] h-[202px]  lg:w-[212px] lg:h-[220px] min-[1360px]:w-[368px] min-[1360px]:h-[182px] p-[27px] rounded-[16px] dark:shadow-[4px_4px_20px_0_#b997f9] dark:bg-[#1a1d2c] shadow-[4px_4px_20px_0_#4b506b] '>
-			<div className=''>
+		<div className='sm:w-[312px] sm:h-[202px]  md:w-[212px] md:h-[220px] xl:w-[368px] xl:h-[182px]  p-[27px] rounded-[16px] dark:shadow-[4px_4px_20px_0_#b997f9] dark:bg-[#1a1d2c] shadow-[4px_4px_20px_0_#4b506b] '>
+			<div>
 				<HomeIcon>{children}</HomeIcon>
 			</div>
 			<div className='my-[16px]'>
-				<TextB1>{titulo}</TextB1>{" "}
+				<TextB1>{titulo}</TextB1>
 			</div>
-			<div className=''>
-				<TextB3>{text}</TextB3>{" "}
+			<div>
+				<TextB3>{text}</TextB3>
 			</div>
 		</div>
 	);

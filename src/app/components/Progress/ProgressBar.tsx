@@ -6,9 +6,11 @@ import ProgressLevelFour from "./ProgressLevelFour";
 
 const ProgressBar = ({ level, text }: { level: number; text: string }) => {
 	return (
-		<div className='w-[312px] min-[360px]:h-[56px] min-[768px]:w-[684px]  min-[1024px]:w-[448px]  min-[1360px]:w-[564px] h-[60px]'>
+		<div className='sm:w-[312px] sm:h-[56px] md:w-[684px]  lg:w-[448px] xl:w-[564px] h-[60px]'>
 			<div>
-                        <p className='min-[768px]:h-[24px] h-[28px] dark:text-blanco text-negro6 text-left tracking-normal text-[20px] min-[768px]:text-[16px] leading-7 min-[768px]:leading-6 font-semibold '>{text}</p>
+				<p className='md:h-[24px] h-[28px] dark:text-blanco text-negro6 text-left tracking-normal text-[20px] md:text-[16px] leading-7 md:leading-6 font-semibold '>
+					{text}
+				</p>
 			</div>
 			{level === 1 ? (
 				<ProgressLevelOne />

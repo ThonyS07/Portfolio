@@ -8,7 +8,7 @@ import ProgressWLabelAndName from "@/app/components/Progress/ProgressWLabelAndNa
 
 const Home = () => {
 	return (
-		<div>
+		<div className="w-full">
 			<NavBar />
 			<div className='px-[78px]'>
 				<section id='home'>

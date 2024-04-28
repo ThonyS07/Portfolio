@@ -2,7 +2,6 @@ const FamiliaIcon = () => {
 	return (
 		<div className='h-[24px]'>
 			
-				<div>
 					<svg
 						width={24}
 						height={24}
@@ -17,7 +16,7 @@ const FamiliaIcon = () => {
 							strokeLinejoin='round'
 						/>
 					</svg>
-				</div>
+				
 			
 		</div>
 	);

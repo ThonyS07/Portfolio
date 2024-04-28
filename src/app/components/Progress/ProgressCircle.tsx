@@ -7,7 +7,7 @@ import ProgressWLabelAndName from "./ProgressWLabelAndName";
 const ProgressCircle: React.FC<ProgressGeneral> = ({ value, size, text }) => {
 	if (size == "XS" || size == "xs") {
 		return (
-			<div>
+			<div className="flex flex-col items-center">
 				<ProgressWLabel value={value} size={64} />
 				<TextR4>{text}</TextR4>
 			</div>

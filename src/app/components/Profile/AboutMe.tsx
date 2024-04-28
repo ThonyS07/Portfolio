@@ -9,29 +9,37 @@ import { HeaderBl5, TextBl1 } from "@/app/format/BlackTypography";
 import SoftSkills from "./SoftSkills";
 import HardSkills from "./HardSkills";
 import Experience from "./Experience";
+import ProfileCards from "./ProfileCards";
 
 const AboutMe = () => {
 	return (
-		<div className='flex flex-col w-full items-center'>
-			<div className='flex flex-col mb-[56px] w-full items-center'>
-				<TextL1>Quien soy</TextL1>
-				<HeaderBl5>Sobre mí</HeaderBl5>
+		<div className='flex flex-col w-full items-center mb-[80px]'>
+			<div className='flex flex-col max-[768px]:mb-[40px] mb-[56px] w-full items-center'>
+				<div className='mb-[32px]'>
+					<TextL1>Quien soy</TextL1>
+					<HeaderBl5>Sobre mí</HeaderBl5>
+				</div>
+				<ProfileCards />
 			</div>
-			<div className=''>
-				<div className='flex w-full mb-[32px] items-center justify-center '>
+			<div className='flex flex-col w-full justify-center items-center'>
+				<div className='flex w-full mb-[32px]  justify-center items-center'>
 					<TextBl1>Mi experiencia como UX</TextBl1>
 				</div>
-				<div className='flex justify-around '>
+				<div className='flex w-full justify-between '>
 					<Experience />
 				</div>
 			</div>
-			<div className=''>
+			<div className='flex flex-col w-full justify-center items-center'>
 				<TextBl1>Mis habilidades blandas</TextBl1>
-				<SoftSkills />
+				<div className='mt-[32px] mb-[56px]'>
+					<SoftSkills />
+				</div>
 			</div>
-			<div className=''>
+			<div className='flex flex-col w-full justify-center items-center'>
 				<TextBl1>Mis habilidades duras</TextBl1>
-				<HardSkills />
+				<div className='mt-[32px] max-[768px]:mb-[40px] min-[768px]:mb-[56px]'>
+					<HardSkills />
+				</div>
 			</div>
 		</div>
 	);
