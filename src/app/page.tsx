@@ -5,6 +5,8 @@ import NavBar from "@/app/components/NavBar/NavBar";
 import AboutMe from "@/app/components/Profile/AboutMe";
 import ProjectsWrapper from "@/app/components/Projects/ProjectsWrapper";
 import ProgressWLabelAndName from "@/app/components/Progress/ProgressWLabelAndName";
+import { LabelGreen } from "./components/Labels/Label";
+import Projects from "./components/Projects/Projects";
 
 const Home = () => {
 	return (
@@ -18,7 +20,7 @@ const Home = () => {
 					<AboutMe />
 				</section>
 				<section id='my projects'>
-					<ProjectsWrapper />
+					<Projects />
 				</section>
 				<section id='contact me'>
 					<ContactWrapper />
@@ -26,6 +28,7 @@ const Home = () => {
 
 				<section className='p-5 justify-between'>
 					<h1>PRUEBAS</h1>
+					<LabelGreen>dgsdf</LabelGreen>
 				</section>
 			</div>
 		</div>

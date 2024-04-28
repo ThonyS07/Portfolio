@@ -15,7 +15,7 @@ const AboutMe = () => {
 	return (
 		<div className='flex flex-col w-full items-center mb-[80px]'>
 			<div className='flex flex-col max-[768px]:mb-[40px] mb-[56px] w-full items-center'>
-				<div className='mb-[32px]'>
+				<div className='mb-[32px] flex flex-col items-center'>
 					<TextL1>Quien soy</TextL1>
 					<HeaderBl5>Sobre mí</HeaderBl5>
 				</div>
