@@ -2,11 +2,12 @@ import React from 'react'
 import { TextL1 } from "@/app/format/LightTypography";
 import { HeaderBl5, TextBl1 } from "@/app/format/BlackTypography";
 import ProjectsCard from '../Cards/ProjectsCard';
-import viaje from '@/assets/img/viaje.svg'
+// import viaje from '@/assets/img/viaje.svg'
+import viaje from "@/assets/img/Mask group.png";
 
 const ProjectsWrapper = () => {
   return (
-		<div className='flex sm:flex-col md:flex-row sm:gap-[24px] md:ml-40 lg:gap-[40] xl:gap-[68px] flex-wrap items-center'>
+		<div className='flex xl:w-[90%] sm:flex-col md:flex-row sm:gap-[24px]  lg:gap-[40] xl:gap-[68px] flex-wrap items-center  justify-center'>
 			<ProjectsCard
 				titulo='Banca'
 				tags={["UX", "UI", "Referencia"]}

@@ -26,6 +26,8 @@ const Button = ({ children, onClick, size }: ButtonsProps) => {
 			"h-56 py-4 px-[25px] ";
 	}
 
+	
+
 	return (
 		<div className='flex justify-center items-center'>
 			<button

@@ -28,7 +28,7 @@ const Home = () => {
 
 				<section className='p-5 justify-between'>
 					<h1>PRUEBAS</h1>
-					<LabelGreen>dgsdf</LabelGreen>
+					
 				</section>
 			</div>
 		</div>
