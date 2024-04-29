@@ -7,7 +7,7 @@ const SwitchS: React.FC<SwitchProps> = ({ children, onClick }) => {
 	const click = () => {
 		setIsSelected(isSelected === true ? false : true);
 	};
-	console.log(isSelected);
+
 	return (
 	
 			<label

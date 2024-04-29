@@ -1,21 +1,20 @@
 "use client";
 import ContactWrapper from "@/app/components/Contact/ContactWrapper";
-import HomeContent from "@/app/components/HomeContent/HomeContent";
+import HomeContent from "@/app/components/Home/HomeContent";
 import NavBar from "@/app/components/NavBar/NavBar";
 import AboutMe from "@/app/components/Profile/AboutMe";
-import ProjectsWrapper from "@/app/components/Projects/ProjectsWrapper";
-import ProgressWLabelAndName from "@/app/components/Progress/ProgressWLabelAndName";
-import { LabelGreen } from "./components/Labels/Label";
 import Projects from "./components/Projects/Projects";
 
 const Home = () => {
 	return (
-		<div className="w-full">
+		<div className='w-full'>
 			<NavBar />
-			<div className='px-[78px]'>
-				<section id='home'>
-					<HomeContent />
-				</section>
+			<section
+				className='sm:pl-[25px] md:pl-[42px] lg:pl-[52px] xl:pl-[104px]'
+				id='home'>
+				<HomeContent />
+			</section>
+			<div className='sm:px-[25px] md:px-[42px] lg:px-[52px] xl:px-[104px]'>
 				<section id='about me'>
 					<AboutMe />
 				</section>
@@ -28,7 +27,6 @@ const Home = () => {
 
 				<section className='p-5 justify-between'>
 					<h1>PRUEBAS</h1>
-					
 				</section>
 			</div>
 		</div>

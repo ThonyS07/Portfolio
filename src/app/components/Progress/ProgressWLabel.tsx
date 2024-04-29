@@ -10,7 +10,7 @@ const ProgressWLabel: React.FC<ProgressProps> = ({ value, size }) => {
 	const dashOffset = dashArray - (dashArray * value) / 100;
 	const { theme, setTheme } = useTheme();
 	const color = theme === "dark" ? "#ffffff" : "#1a1d12";
-	console.log(theme);
+
 	return (
 		<div className=' flex justify-center items-center w-max '>
 			<svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>

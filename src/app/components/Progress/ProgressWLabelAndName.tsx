@@ -18,7 +18,7 @@ const ProgressWLabel: React.FC<ProgressProps> = ({ value, size, text }) => {
 	const { theme, setTheme } = useTheme();
 	const colorText = theme === "dark" ? "#f0f3ff" : "#8F94B0";
 	const colorValue = theme === "dark" ? "#ffffff" : "#1A1D2C";
-	console.log(theme);
+
 	const classText =
 		size === 160
 			? " leading-5 font-semibold text-left tracking-normal text-[14px]  "
