@@ -5,16 +5,25 @@ import ButtonS from "../Buttons/Button";
 import ProgressBar from "../Progress/ProgressBar";
 import HomeTitlte from "./HomeTitlte";
 import Image from "next/image";
-import profileImage from "@/assets/img/profileAndrea.jpg"
+import profileImage from "@/assets/img/profileAndrea.jpg";
 
 const HomeContent = () => {
 	return (
-		<div>
+		<div className="flex flex-col md:flex-row justify-between items-center gap-[24px] ">
 			<div>
-				<HomeTitlte name='Andrea' lastName='Encarnación' />
+				<div>
+					<HomeTitlte name='Andrea' lastName='Encarnación' />
+				</div>
+				<div className='flex justify-center w-full items-center md:hidden'>
+					<Image alt='profile' src={profileImage} width={180} height={201} />
+				</div>
+				<div className='flex justify-center sm:w-[309px] md:w-[330px] lg:w-[46.875%] xl:w-[564px] '>
+					<HomeDescription />
+				</div>
 			</div>
-			<div className="flex justify-center w-full items-center md:hidden"><Image alt="profile" src={profileImage} width={180} height={201}/></div>
-			<div></div>
+			<div>
+				<HomeImage />
+			</div>
 		</div>
 	);
 };
