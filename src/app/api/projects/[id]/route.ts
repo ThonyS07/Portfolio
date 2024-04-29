@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/libs/prisma";
+import { prisma } from "@/assets/libs/prisma";
 import { Params } from "@/app/interfaces/Project";
 import { Prisma } from "@prisma/client";
 
