@@ -6,7 +6,7 @@ import ViajesIcon from "../Cards/HomeCards/Icons/ViajesIcon";
 
 const ProfileCards = () => {
 	return (
-		<div className='flex items-center flex-col w-full md:justify-between  md:flex-row xl:mx-[104px]'>
+		<div className='flex items-center flex-col w-full md:w-[684px] xl:w-full md:justify-between  md:flex-row xl:mx-[104px]'>
 			<div>
 				<HomeCard
 					titulo='Familia'
