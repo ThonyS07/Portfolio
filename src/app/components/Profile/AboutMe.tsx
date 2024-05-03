@@ -13,7 +13,7 @@ import ProfileCards from "./ProfileCards";
 
 const AboutMe = () => {
 	return (
-		<div className='flex flex-col w-full items-center sm:mx-[48px] md:mx-[64px] xl:mx-[56px]'>
+		<div className='flex flex-col w-full items-center sm:my-[48px] md:my-[64px] xl:my-[56px]'>
 			<div className='flex flex-col max-[768px]:mb-[40px] mb-[56px] w-full items-center'>
 				<div className='mb-[32px] flex flex-col items-center'>
 					<TextL1>Quien soy</TextL1>
