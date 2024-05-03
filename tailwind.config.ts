@@ -27,6 +27,11 @@ const config: Config = {
     },
 	
 		colors: {
+			whatsapp:' #00d95f',
+			github:'#1a1d2c',
+			instagram:"#9339a6",
+			gmail:'#ea4335',
+			linkedin:'#006699',
 			disable: "#A9AFD9",
 			green:"#389E0D",
 			purple10: "#F8F8FF",

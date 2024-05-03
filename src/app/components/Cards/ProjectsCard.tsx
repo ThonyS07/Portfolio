@@ -5,6 +5,7 @@ import Button from "../Buttons/Button";
 import Image from "next/image";
 import { ProjectCardProps } from "@/Props/ProjectsCardProps";
 import { LabelBlue } from "../Labels/Label";
+import Link from "next/link";
 
 const ProjectsCard = ({
 	titulo,
@@ -12,6 +13,7 @@ const ProjectsCard = ({
 	text,
 	buttonText,
 	image,
+	buttonLink
 }: ProjectCardProps) => {
 	return (
 		<div className='flex flex-col items-start w-[280px] h-[465px] p-[27px] rounded-[8px] shadow-[4px_4px_20px_0_#4b506b] bg-blanco dark:shadow-[4px_4px_20px_0_#b997f9] dark:bg-[#1a1d2c]'>
@@ -21,7 +23,12 @@ const ProjectsCard = ({
 					alt='projectImage'
 					width={0}
 					height={0}
-					style={{ width: "226px", height: "161px", aspectRatio: "1/1", objectFit: "cover" }}
+					style={{
+						width: "226px",
+						height: "161px",
+						aspectRatio: "1/1",
+						objectFit: "cover",
+					}}
 				/>
 			</div>
 			<div className='mb-[16px]'>
@@ -38,7 +45,9 @@ const ProjectsCard = ({
 				<TextR3>{text}</TextR3>
 			</div>
 			<div>
-				<Button size='l'>{buttonText}</Button>
+				<Link href={buttonLink}>
+					<Button size='l'>{buttonText}</Button>
+				</Link>
 			</div>
 		</div>
 	);

@@ -7,27 +7,25 @@ import Projects from "./components/Projects/Projects";
 
 const Home = () => {
 	return (
-		<div className='w-full'>
+		<div className='w-full '>
 			<NavBar />
 			<section
-				className='sm:pl-[25px] md:pl-[42px] lg:pl-[52px] xl:pl-[104px]'
+				className='sm:pl-[25px] md:pl-[42px] lg:pl-[52px] xl:pl-[104px] mt-[32px]'
 				id='home'>
 				<HomeContent />
 			</section>
-			<div className='sm:px-[25px] md:px-[42px] lg:px-[52px] xl:px-[104px]'>
+			<div className=' sm:px-[25px] md:px-[42px] lg:px-[52px] xl:px-[104px]'>
 				<section id='about me'>
 					<AboutMe />
 				</section>
 				<section id='my projects'>
 					<Projects />
 				</section>
-				<section id='contact me'>
-					<ContactWrapper />
-				</section>
-
-				<section className='p-5 justify-between'>
-					<h1>PRUEBAS</h1>
-				</section>
+				<div className='flex-col justify-center items-center'>
+					<section id='contact me'>
+						<ContactWrapper />
+					</section>
+				</div>
 			</div>
 		</div>
 	);

@@ -6,4 +6,5 @@ export type ProjectCardProps = {
 	text: string;
 	buttonText: string;
 	image: StaticImageData;
+	buttonLink: string;
 };

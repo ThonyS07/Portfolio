@@ -11,8 +11,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-	title: "Anthony Silva",
-	description: "Portfolio Anthony Silva",
+	title: "Andrea Encarnación",
+	description: "Portfolio Andrea Encarnación",
 };
 
 export default function RootLayout({
