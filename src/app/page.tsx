@@ -11,18 +11,18 @@ const Home = () => {
 			<NavBar />
 			<section
 			
-				id='home'>
+				id='inicio'>
 				<HomeContent />
 			</section>
 			<div className=' sm:px-[25px] md:px-[42px] lg:px-[52px] xl:px-[104px]'>
-				<section id='about me'>
+				<section id='sobre mi'>
 					<AboutMe />
 				</section>
-				<section id='my projects'>
+				<section id='mis pproyectos'>
 					<Projects />
 				</section>
 				<div className='flex-col justify-center items-center'>
-					<section id='contact me'>
+					<section id='contactame'>
 						<ContactWrapper />
 					</section>
 				</div>

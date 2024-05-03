@@ -3,12 +3,12 @@ import { TextL1 } from "@/app/format/LightTypography";
 import { HeaderBl5, TextBl1 } from "@/app/format/BlackTypography";
 import ProjectsCard from "../Cards/ProjectsCard";
 // import viaje from '@/assets/img/viaje.svg'
-import banca from "@/assets/img/Mask group.png";
-import seguros from "@/assets/img/Mask group.png";
-import animalista from "@/assets/img/Mask group.png";
-import transporte from "@/assets/img/Mask group.png";
-import ecommerce from "@/assets/img/Mask group.png";
-import chatbot from "@/assets/img/Mask group.png";
+import banca from "@/assets/img/Appbancaria.png";
+import seguros from "@/assets/img/Webparaseguros.png";
+import animalista from "@/assets/img/Webparaveterinarias.png";
+import transporte from "@/assets/img/Appparataxis.png";
+import ecommerce from "@/assets/img/Ecommerce.png";
+import chatbot from "@/assets/img/ChatBotparadelivery.png";
 
 const ProjectsWrapper = () => {
 	return (
