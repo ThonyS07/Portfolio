@@ -10,7 +10,7 @@ const Home = () => {
 		<div className='w-full '>
 			<NavBar />
 			<section
-				className='sm:pl-[25px] md:pl-[42px] lg:pl-[52px] xl:pl-[104px] mt-[32px]'
+			
 				id='home'>
 				<HomeContent />
 			</section>
