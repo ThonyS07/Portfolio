@@ -4,7 +4,7 @@ import React from "react";
 
 const HomeTitlte = ({ name, lastName}: { name: string, lastName: string }) => {
 	return (
-		<div className="flex flex-col w-full pl-[25px] m-0 gap-2">
+		<div className="flex flex-col w-full  m-0 gap-2">
 			<div className='md:hidden dark:text-[#fff] text-negro3'>
 				<TextL1>Hola, yo soy</TextL1>
 			</div>
@@ -21,7 +21,7 @@ const HomeTitlte = ({ name, lastName}: { name: string, lastName: string }) => {
 				<HeaderBl2>{lastName}</HeaderBl2>
 			</div>
 
-			<div className='hidden lg:flex lg:flex-col xl:flex-row gap-5  dark:text-[#fff] text-negro3'>
+			<div className='hidden lg:flex lg:flex-row  gap-5  dark:text-[#fff] text-negro3'>
 				<HeaderBl1>{name}</HeaderBl1>
 				<HeaderBl1>{lastName}</HeaderBl1>
 			</div>

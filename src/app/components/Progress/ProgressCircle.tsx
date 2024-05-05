@@ -16,7 +16,7 @@ const ProgressCircle: React.FC<ProgressGeneral> = ({ value, size, text }) => {
 	if (size == "S" || size == "s") {
 		return (
 			<div>
-				<ProgressWLabelAndName value={value} size={160} text={text} />
+				<ProgressWLabelAndName value={value} size={152} text={text} />
 				
 			</div>
 		);
@@ -31,7 +31,7 @@ const ProgressCircle: React.FC<ProgressGeneral> = ({ value, size, text }) => {
 	if (size == "L" || size == "l") {
 		return (
 			<div>
-				<ProgressWLabelAndName value={value} size={240} text={text} />
+				<ProgressWLabelAndName value={value} size={232} text={text} />
 			</div>
 		);
 	}

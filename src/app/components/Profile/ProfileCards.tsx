@@ -6,7 +6,7 @@ import ViajesIcon from "../Cards/HomeCards/Icons/ViajesIcon";
 
 const ProfileCards = () => {
 	return (
-		<div className='flex items-center flex-col w-full md:w-[684px] xl:w-full md:justify-between  md:flex-row xl:mx-[104px]'>
+		<div className='flex items-center justify-center flex-col w-full md:w-[684px] lg:w-full gap-[24px] md:flex-row xl:mx-[104px] md:flex-wrap lg:flex-nowrap'>
 			<div>
 				<HomeCard
 					titulo='Familia'
@@ -21,10 +21,17 @@ const ProfileCards = () => {
 					<PersonasIcon />
 				</HomeCard>
 			</div>
-			<div>
+			<div className='my-[0px] sm:my-[24px]'>
 				<HomeCard
 					titulo='Viajes'
 					text='Amo con locura viajar y conocer diferentes culturas, esto ayuda mucho a mi curiosidad'>
+					<ViajesIcon />
+				</HomeCard>
+			</div>
+			<div className=''>
+				<HomeCard
+					titulo='Conversaciones'
+					text='Me gusta mucho conversar, encuentro fascinante conocer que hay en las cabezas de las personas'>
 					<ViajesIcon />
 				</HomeCard>
 			</div>

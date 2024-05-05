@@ -13,14 +13,20 @@ const HomeCard = ({
 	titulo: string;
 }) => {
 	return (
-		<div className='sm:w-[312px] sm:h-[202px]  md:w-[212px] md:h-[220px] xl:w-[368px] xl:h-[182px]  p-[27px] rounded-[16px] dark:shadow-[4px_4px_20px_0_#b997f9] dark:bg-[#1a1d2c] shadow-[4px_4px_20px_0_#4b506b] '>
+		<div className='sm:w-[328px] sm:h-[202px]  md:w-[328px] md:h-[202px] xl:w-[360px] xl:h-[220px] lg:w-[270px] lg:h-[202px]  p-[27px] rounded-[16px] dark:shadow-[4px_4px_20px_0_#b997f9] dark:bg-[#1a1d2c] shadow-[4px_4px_20px_0_#4b506b]'>
 			<div>
 				<HomeIcon>{children}</HomeIcon>
 			</div>
-			<div className='my-[16px]'>
+			<div className='my-[16px] flex xl:hidden'>
 				<TextB1>{titulo}</TextB1>
 			</div>
-			<div>
+			<div className=' flex xl:hidden'>
+				<TextB3>{text}</TextB3>
+			</div>
+			<div className='my-[16px] xl:flex hidden'>
+				<TextB1>{titulo}</TextB1>
+			</div>
+			<div className=' xl:flex hidden'>
 				<TextB3>{text}</TextB3>
 			</div>
 		</div>

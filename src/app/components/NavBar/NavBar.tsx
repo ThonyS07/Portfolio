@@ -6,7 +6,7 @@ import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
 import Logo from "./Logo";
 import { Tabs } from "@/app/components/NavBar/Tabs/Tabs";
 import Button from "../Buttons/Button";
-// import CV from "../../../../public/;
+// import CV from "@";
 import Icon from "./Icon";
 
 import HamburguerButton from "./MenuIcon";
@@ -20,11 +20,11 @@ const NavBar = () => {
 
 	return (
 		<Navbar
-			className='dark:border-blanco border-negro1 w-full min-[360px]:h-[56px] min-[768px]:h-[64px]  min-[1360px]:px-[104px] lg:h-[80px] lg:py-[19px] lg:px-[48px]'
+			className='dark:bg-negro1 bg-negro10  md:px-[26px] lg:px-[91px] xl:px-[186px]  sm:h-[56px] md:h-[64px] lg:h-[80px] lg:py-[19px]'
 			isBordered
 			isBlurred
 			maxWidth='full'>
-			<div className='w-1/12'>
+			<div className='flex justify-start'>
 				<NavbarBrand>
 					<Link href='/'>
 						<Logo />
@@ -66,9 +66,10 @@ const NavBar = () => {
 						<HamburguerButton />
 					</div>
 					<div className='hidden lg:flex'>
-						<a href='../../../../public/CVAndrea.pdf' download='CVAndreaEncarnación'>
-
-						<Button size='l'>Descargar CV</Button>
+						<a
+							href='../../../../public/CVAndrea.pdf'
+							download='CVAndreaEncarnación'>
+							<Button size='l'>Descargar CV</Button>
 						</a>
 					</div>
 				</NavbarContent>

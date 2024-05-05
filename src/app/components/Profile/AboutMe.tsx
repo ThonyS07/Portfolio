@@ -1,15 +1,13 @@
 import React from "react";
 import Photo from "@/assets/img/Mask group.png";
 import Image from "next/image";
-import AboutMeDescription from "./AboutMeDescription";
-import HomeCard from "../Cards/HomeCards/HomeCard";
-import PRUEBAicon from "../Cards/HomeCards/Icons/FamiliaIcon";
 import { TextL1 } from "@/app/format/LightTypography";
 import { HeaderBl5, TextBl1 } from "@/app/format/BlackTypography";
 import SoftSkills from "./SoftSkills";
 import HardSkills from "./HardSkills";
 import Experience from "./Experience";
 import ProfileCards from "./ProfileCards";
+import { TextB1 } from "@/app/format/BoldTypography";
 
 const AboutMe = () => {
 	return (
@@ -25,7 +23,7 @@ const AboutMe = () => {
 				<div className='flex w-full mb-[32px]  justify-center items-center'>
 					<TextBl1>Mi experiencia como UX</TextBl1>
 				</div>
-				<div className='flex w-full justify-between '>
+				<div className='flex '>
 					<Experience />
 				</div>
 			</div>

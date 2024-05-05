@@ -10,30 +10,25 @@ const config: Config = {
 	],
 	theme: {
 		screens: {
-      'sm': '320px',
-    
+			sm: "360px",
 
-      'md': '768px',
-    
+			md: "768px",
 
-      'lg': '1024px',
-   
+			lg: "1366px",
 
-      'xl': '1360px',
-  
+			xl: "1920px",
 
-      '2xl': '1536px',
-      
-    },
-	
+			"2xl": "2000px",
+		},
+
 		colors: {
-			whatsapp:' #00d95f',
-			github:'#1a1d2c',
-			instagram:"#9339a6",
-			gmail:'#ea4335',
-			linkedin:'#006699',
+			whatsapp: " #00d95f",
+			github: "#1a1d2c",
+			instagram: "#9339a6",
+			gmail: "#ea4335",
+			linkedin: "#006699",
 			disable: "#A9AFD9",
-			green:"#389E0D",
+			green: "#389E0D",
 			purple10: "#F8F8FF",
 			purple9: "#E1E1FF",
 			purple8: "#CDCDFF",
@@ -69,7 +64,7 @@ const config: Config = {
 			width: {
 				"38": "38px",
 				"46": "46px",
-				"54":"54px",
+				"54": "54px",
 				"89": "89px",
 				"100": "100px",
 				"120": "120px",
@@ -82,6 +77,10 @@ const config: Config = {
 				"42": "42px",
 				"48": "48px",
 				"56": "56px",
+			},
+			backgroundColor: {
+				dark: "#A57BF5",
+				light: "#FFFFFF",
 			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -101,23 +100,24 @@ const config: Config = {
 		},
 		borderRadius: {
 			lg: "28px",
-			"full":"999px"
+			full: "999px",
 		},
 	},
 	darkMode: "class",
-	plugins: [nextui({
-		themes: {
-		
-			light: {
-				layout: {}, 
-				colors: {} 
+	plugins: [
+		nextui({
+			themes: {
+				light: {
+					layout: {},
+					colors: {},
+				},
+				dark: {
+					layout: {},
+					colors: {},
+				},
 			},
-			dark: {
-				layout: {},
-				colors: {} 
-			},
-		}
-	})],
+		}),
+	],
 };
 
 export default config;

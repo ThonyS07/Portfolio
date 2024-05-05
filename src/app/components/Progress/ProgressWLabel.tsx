@@ -40,7 +40,7 @@ const ProgressWLabel: React.FC<ProgressProps> = ({ value, size }) => {
 					textAnchor='middle'
 					dominantBaseline='middle'
 					fill={`${color}`}
-					className='text-center w-7 h-5 text-sm font-bold'>
+					className='text-center w-7 h-5 text-sm m-2 font-bold'>
 					{value} %
 				</text>
 			</svg>
