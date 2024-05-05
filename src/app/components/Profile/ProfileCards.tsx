@@ -14,14 +14,14 @@ const ProfileCards = () => {
 					<FamiliaIcon />
 				</HomeCard>
 			</div>
-			<div className='my-[0px] sm:my-[24px]'>
+			<div className='my-[0px] '>
 				<HomeCard
 					titulo='Danza'
 					text='He sido participante de distintos elencos de danza, donde aprendí a ser parte de un equipo.'>
 					<PersonasIcon />
 				</HomeCard>
 			</div>
-			<div className='my-[0px] sm:my-[24px]'>
+			<div className='my-[0px] '>
 				<HomeCard
 					titulo='Viajes'
 					text='Amo con locura viajar y conocer diferentes culturas, esto ayuda mucho a mi curiosidad'>

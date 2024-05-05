@@ -3,7 +3,7 @@ import ProgressBar from '../Progress/ProgressBar';
 
 const HardSkills = () => {
   return (
-		<div className='flex max-[1024px]:flex-col flex-row flex-wrap justify-evenly gap-[24px]'>
+		<div className='flex md:flex-col lg:flex-row xl:flex-row lg:w-[1152px] xl:w-[1512px] flex-wrap justify-evenly gap-[24px]'>
 			<ProgressBar text='Ux Research' level={3} />
 			<ProgressBar text='Prototipado' level={4} />
 			<ProgressBar text='Testing' level={3} />

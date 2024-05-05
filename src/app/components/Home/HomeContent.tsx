@@ -11,7 +11,7 @@ const HomeContent = () => {
 	return (
 		<div className="flex flex-col md:flex-row justify-between items-center gap-[24px] ">
 			<div className="md:w-[50%]">
-				<div className="flex w-full">
+				<div className="flex w-full sm:mt-4">
 					<HomeTitlte name='Andrea' lastName='Encarnación' />
 				</div>
 				<div className='flex justify-center w-full items-center md:hidden'>

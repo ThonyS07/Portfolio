@@ -27,9 +27,9 @@ const AboutMe = () => {
 					<Experience />
 				</div>
 			</div>
-			<div className='flex flex-col w-full justify-center items-center'>
+			<div className='flex flex-col w-full justify-center items-center mb-[56px]'>
 				<TextBl1>Mis habilidades blandas</TextBl1>
-				<div className='mt-[32px] mb-[56px]'>
+				<div className='mt-[32px] '>
 					<SoftSkills />
 				</div>
 			</div>

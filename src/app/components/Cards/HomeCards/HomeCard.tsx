@@ -2,6 +2,7 @@ import { TextB1, TextB3 } from "@/app/format/BoldTypography";
 import React from "react";
 import HomeIcon from "./HomeIcon";
 import PRUEBAicon from "./Icons/FamiliaIcon";
+import { TextR2, TextR3 } from "@/app/format/RegularTypography";
 
 const HomeCard = ({
 	children,
@@ -21,13 +22,13 @@ const HomeCard = ({
 				<TextB1>{titulo}</TextB1>
 			</div>
 			<div className=' flex xl:hidden'>
-				<TextB3>{text}</TextB3>
+				<TextR3>{text}</TextR3>
 			</div>
 			<div className='my-[16px] xl:flex hidden'>
 				<TextB1>{titulo}</TextB1>
 			</div>
 			<div className=' xl:flex hidden'>
-				<TextB3>{text}</TextB3>
+				<TextR2>{text}</TextR2>
 			</div>
 		</div>
 	);

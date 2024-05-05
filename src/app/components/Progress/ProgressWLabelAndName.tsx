@@ -20,19 +20,19 @@ const ProgressWLabel: React.FC<ProgressProps> = ({ value, size, text }) => {
 	const colorValue = theme === "dark" ? "#ffffff" : "#1A1D2C";
 
 	const classText =
-		size === 160
+		size === 64
 			? " leading-5 font-semibold text-left tracking-normal text-[14px]  "
-			: size === 200
+			: size === 152
 			? " leading-5 font-semibold text-left tracking-normal text-[14px]  "
-			: size === 240 ? " leading-6 font-bold text-left tracking-normal text-[16px]   " : " leading-6 font-semibold text-left tracking-normal text-[16px]  "
+			: size === 200 ? " leading-6 font-bold text-left tracking-normal text-[16px]   " : " leading-6 font-semibold text-left tracking-normal text-[16px]  "
 	const classValue =
-		size === 160
+		size === 64
+			? " leading-[20px] font-bold text-left tracking-normal text-[14px]  "
+			: size === 152
 			? " leading-[32px] font-bold text-left tracking-normal text-[24px]  "
 			: size === 200
 			? " leading-[40px] font-bold text-left tracking-normal text-[32px]  "
-			: size === 240
-			? " leading-[44px] font-bold text-left tracking-normal text-[36px]  "
-			: " leading-[52px] font-bold text-left tracking-normal text-[40px]  ";
+			: " leading-[44px] font-bold text-left tracking-normal text-[36px]  ";
 
 	return (
 		<div className=' flex justify-center items-center w-max '>
