@@ -45,7 +45,7 @@ const ProjectsCard = ({
 				<TextR3>{text}</TextR3>
 			</div>
 			<div>
-				<Link href={buttonLink}>
+				<Link href={buttonLink} target="_blank">
 					<Button size='l'>{buttonText}</Button>
 				</Link>
 			</div>
