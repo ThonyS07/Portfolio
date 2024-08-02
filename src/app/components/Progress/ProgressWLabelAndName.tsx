@@ -16,9 +16,15 @@ const ProgressWLabel: React.FC<ProgressProps> = ({ value, size, text }) => {
 	const dashArray = radius * Math.PI * 2;
 	const dashOffset = dashArray - (dashArray * value) / 100;
 	const { theme, setTheme } = useTheme();
-	const colorText = theme === "dark" ? "#f0f3ff" : "#8F94B0";
-	const colorValue = theme === "dark" ? "#ffffff" : "#1A1D2C";
+	const [colorText, setColorText] = useState("#8F94B0");
+	const [colorValue, setColorValue] = useState("#1A1D2C");
 
+
+	useEffect(() => {
+		setColorText(theme === "dark" ? "#f0f3ff" : "#8F94B0");
+		setColorValue(theme === "dark" ? "#ffffff" : "#8F94B0");
+	}, [theme]);
+	
 	const classText =
 		size === 64
 			? " leading-5 font-semibold text-left tracking-normal text-[14px]  "
