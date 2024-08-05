@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./progress.module.css";
 import { ProgressProps } from "@/Props/ProgressProps";
 import { useTheme } from "next-themes";
