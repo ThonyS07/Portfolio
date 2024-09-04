@@ -1,10 +1,12 @@
 import { HeaderBl1, HeaderBl2, HeaderBl4 } from "@/app/format/BlackTypography";
 import { HeaderL6, TextL1 } from "@/app/format/LightTypography";
 import React from "react";
+import Frames from "../Frames/Frames";
 
 const HomeTitlte = ({ name, lastName}: { name: string, lastName: string }) => {
 	return (
 		<div className="flex flex-col w-full  m-0 gap-2">
+			
 			<div className='md:hidden dark:text-[#fff] text-negro3'>
 				<TextL1>Hola, yo soy</TextL1>
 			</div>
