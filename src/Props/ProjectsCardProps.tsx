@@ -8,3 +8,11 @@ export type ProjectCardProps = {
 	image: StaticImageData;
 	buttonLink: string;
 };
+
+export type ProjectsPageCardProps = {
+	title: string;
+	text?: string;
+	image: StaticImageData;
+
+	order: number;
+}
