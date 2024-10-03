@@ -1,8 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import {  Lato } from "next/font/google";
+import { Lato } from "next/font/google";
 import { Providers } from "./providers";
-
 
 const lato = Lato({
 	weight: ["100", "300", "400", "700", "900"],
@@ -23,11 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<head>
-				<link
-					rel='apple-touch-icon'
-					sizes='180x180'
-					href='/apple-touch-icon.png'
-				/>
+				<link rel='apple-touch-icon' sizes='180x180' href='/favicon 32.ico' />
 				<link
 					rel='icon'
 					type='image/png'
