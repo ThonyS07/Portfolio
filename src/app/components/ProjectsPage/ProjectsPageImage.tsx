@@ -14,10 +14,10 @@ const ProjectsPageImage = () => {
 					src={taxiImage}
 					alt='profile'
 					width={416}
-					height={226 } 
+					height={226} 
 				/>
 			</div>
-			<div className='hidden lg:flex xl:hidden h-[490px] w-[500px]'>
+			<div className='hidden lg:flex xl:hidden w-[564px] h-[307px]'>
 				<Image
 					src={taxiImage}
 					alt='profile'              
