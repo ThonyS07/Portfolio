@@ -15,7 +15,8 @@ const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
 	const handleDownloadCVPublic = () => {
 		const link = document.createElement("a");
-		link.href = '/CVAndrea.pdf'; // Ruta del archivo en la carpeta public
+		link.href = '/CVAndrea.pdf';
+		link.target = "_blank";// Ruta del archivo en la carpeta public
 		link.download = 'CVAndreaEncarnación.pdf'; // Nombre del archivo al descargar
 		document.body.appendChild(link);
 		link.click();
@@ -75,7 +76,9 @@ const NavBar = () => {
 					</div>
 					<div className='hidden lg:flex'>
 						
-					 	<Button onClick={handleDownloadCVPublic} size='l'>Descargar CV</Button>
+					 	<Button onClick={handleDownloadCVPublic} size='l'>
+							Descargar CV
+						</Button>
 						
 					</div>
 				</NavbarContent>
