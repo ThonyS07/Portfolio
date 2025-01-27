@@ -28,7 +28,7 @@ const Button = ({ children, onClick, size }: ButtonsProps) => {
 
 	return (
 		<div className='flex justify-center items-center'>
-			<button
+			<button onClick={onClick}
 				className={`${classNames}  dark:bg-negro1 dark:border-blanco dark:border-1 dark:hover:border-[#9747ff] dark:hover:text-[#a57bf5] dark:disabled:border-[#9747ff] dark:disabled:text-[#6a708c] dark:active:border-[#ccb4fa] dark:active:text-[#ccb4fa] bg-purple1  flex 
 				justify-center items-center text-center rounded-lg hover:bg-purple3 active:bg-purple2 disabled:bg-purple9 flex-row flex-nowrap whitespace-nowrap text-blanco`}>
 				{size === "S" || size === "s" ? (
