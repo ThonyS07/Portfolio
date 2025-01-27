@@ -13,6 +13,14 @@ import HamburguerButton from "./MenuIcon";
 
 const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
+	const handleDownloadCVPublic = () => {
+		const link = document.createElement("a");
+		link.href = '../../../../public/CVAndrea.pdf'; // Ruta del archivo en la carpeta public
+		link.download = 'CVAndreaEncarnación.pdf'; // Nombre del archivo al descargar
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	};
 
 	const handleSectionClick = (sectionId: string) => {
 		setActiveSection(sectionId);
@@ -66,11 +74,9 @@ const NavBar = () => {
 						<HamburguerButton />
 					</div>
 					<div className='hidden lg:flex'>
-						<a
-							href='../../../../public/CVAndrea.pdf'
-							download='CVAndreaEncarnación'>
-							<Button size='l'>Descargar CV</Button>
-						</a>
+						
+					 	<Button onClick={handleDownloadCVPublic} size='l'>Descargar CV</Button>
+						
 					</div>
 				</NavbarContent>
 			</div>
