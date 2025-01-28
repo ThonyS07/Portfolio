@@ -13,14 +13,28 @@ import HamburguerButton from "./MenuIcon";
 
 const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
-	const handleDownloadCVPublic = () => {
-		const link = document.createElement("a");
-		link.href = '/CVAndrea.pdf';
-		link.target = "_blank";// Ruta del archivo en la carpeta public
-		link.download = 'CVAndreaEncarnación.pdf'; // Nombre del archivo al descargar
-		document.body.appendChild(link);
-		link.click();
-		document.body.removeChild(link);
+	const handleDownloadCVPublic = async () => {
+   		 const filePath = "/CVAndrea.pdf"; // Ruta correct
+
+    	try {
+        // Verifica si el archivo existe
+        const response = await fetch(filePath);
+        if (!response.ok) {
+            throw new Error("File not found");
+        }
+
+        // Si el archivo existe, procede con la descarga
+        const link = document.createElement("a");
+        link.href = filePath;
+        link.target = "_blank";
+        link.download = "CVAndrea.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } catch (error) {
+        console.error("Error downloading file:", error);
+        alert("The file could not be found or downloaded.");
+    }
 	};
 
 	const handleSectionClick = (sectionId: string) => {
