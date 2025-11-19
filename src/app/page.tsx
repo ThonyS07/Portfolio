@@ -9,7 +9,7 @@ const Home = () => {
 	return (
 		<div className='w-full dark:bg-negro3'>
 			<NavBar />
-			<div className='w-full dark:bg-negro3 sm:px-[16px] md:px-[44px] lg:px-[107px] xl:px-[204px] pb-1'>
+			<div className='w-full dark:bg-negro3 sm:px-4 md:px-11 lg:px-[107px] xl:px-[204px] pb-1'>
 				<section id='inicio'>
 					<HomeContent />
 				</section>
