@@ -5,8 +5,8 @@ import ProjectsWrapper from "./ProjectsWrapper";
 
 const Projects = () => {
 	return (
-		<div className='flex flex-col w-full items-center mb-[80px]'>
-			<div className='flex flex-col max-[768px]:mb-[40px] mb-[56px] w-full items-center'>
+		<div className='flex flex-col w-full items-center mb-20'>
+			<div className='flex flex-col max-[768px]:mb-10 mb-56 w-full items-center'>
 				<TextL1>Lo que puedo hacer</TextL1>
 				<HeaderBl5>Mis proyectos</HeaderBl5>
 			</div>

@@ -9,7 +9,7 @@ import transporte from "@/assets/img/porta/Taxis/01 01 01 portada.png";
 
 const ProjectsWrapper = () => {
 	return (
-		<div className='flex xl:w-[90%] sm:flex-col md:flex-row sm:gap-[24px]  lg:gap-[40] xl:gap-[68px] flex-wrap items-center  justify-center'>
+		<div className='flex xl:w-[90%] sm:flex-col md:flex-row sm:gap-6  lg:gap-[40] xl:gap-[68px] flex-wrap items-center  justify-center'>
 			<ProjectsCard
 				titulo='App para taxis'
 				tags={["UX", "UI", "Referencia"]}
