@@ -5,11 +5,7 @@ const config: Config = {
 	darkMode: "class",
 
 	theme: {
-		
-		
-
 		extend: {
-		
 		
 			backgroundColor: {
 				dark: "#A57BF5",
@@ -21,10 +17,6 @@ const config: Config = {
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 		},
-
-	
-
-	
 	},
 
 	plugins: [
