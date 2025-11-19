@@ -3,17 +3,18 @@
 
 import React from "react";
 import NavBar from "../components/NavBar/NavBar";
-import taxiImage from "@/assets/img/porta/Taxis/01 01 01 portada.png";
+import bancaImage from "@/assets/img/porta/Banca/Appbancaria.png";
 import ProjectsPageContent from "../components/ProjectsPage/ProjectsPageContent";
 import ProjectsPageAlcance from "../components/ProjectsPage/ProjectsPageAlcance";
+import ProjectsPageAlcanceBanca from '../components/ProjectsPage/ProjectsPageAlcanceBanca';
 
 const BancaPage = () => {
 	console.log("Imports:", {
 		A: React,
 		B: NavBar,
-		C: ProjectsPageContent,	
-		D: taxiImage,
-		E: ProjectsPageAlcance
+		C: ProjectsPageContent,
+		D: bancaImage,
+		E: ProjectsPageAlcance,
 	});
 	const stakeholders = [
 		"Product owner",
@@ -34,12 +35,12 @@ const BancaPage = () => {
 				<div className='w-full dark:bg-negro3 sm:px-4 md:px-11 lg:px-[107px] xl:px-[204px] pb-1'>
 					<ProjectsPageContent
 						title='Bxl Banca empresas'
-						image={taxiImage}
+						image={bancaImage}
 						description='Mi experiencia dice Banca, y no es casualidad, este es un proyecto que pude construir en poco tiempo y del cual me siento orgullosa.
 En la actualidad Banca empresas es el sector con menos soluciones tecnológicas y curiosamente el que más retribución económica brinda a los bancos.'
 					/>
-                    <ProjectsPageAlcance
-                        embedTitle='Banca empresas'
+					<ProjectsPageAlcanceBanca
+						embedTitle='Banca empresas'
 						stakeHolders={stakeholders}
 						metodologia={metodologia}
 						equipo={equipo}

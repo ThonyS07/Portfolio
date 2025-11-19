@@ -3,11 +3,13 @@ import React from 'react'
 
 const HomeDescription = () => {
   return (
-		<div className='flex flex-col w-full mt-[16px] m-0 gap-2'>
+		<div className='flex flex-col w-full mt-4 m-0 gap-2'>
 			<TextR2>
-				Diseñadora con más de 4 años de experiencia en proyectos de distintos
-				sectores destacándome en banca y seguros, me considero una alumna
-				constante y estoy siempre dispuesta a emprender nuevos retos.
+				Soy una diseñadora con más de 5 años de experiencia principalmente en
+				banca digital, optimización de procesos de banca empresas y retail.
+				Estoy segura que mi experiencia en Design Systems, investigación con
+				usuarios y rediseño de journeys críticos ayudarán a cumplir los
+				objetivos en el reto que se me proponga.
 			</TextR2>
 		</div>
 	);

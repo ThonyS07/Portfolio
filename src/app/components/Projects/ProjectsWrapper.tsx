@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectsCard from "../Cards/ProjectsCard";
-// import viaje from '@/assets/img/viaje.svg'
-import banca from "@/assets/img/Appbancaria.png";
+import bancaImage from "@/assets/img/porta/Banca/Appbancaria.png";
 import seguros from "@/assets/img/porta/Proyectos/Webparaseguros.png";
 import animalista from "@/assets/img/Webparaveterinarias.png";
 import transporte from "@/assets/img/porta/Taxis/01 01 01 portada.png";
@@ -21,9 +20,9 @@ const ProjectsWrapper = () => {
 			<ProjectsCard
 				titulo='BxI Banca empresas'
 				tags={["UX", "UI", "Referencia"]}
-				text='Después de algunos años trabajando para 2 bancos, decidí tomar de referencia mi experiencia para poner en práctica todo lo aprendido.'
+				text='Después de algunos años trabajando para 3 bancos, decidí tomar de referencia mi experiencia para poner en práctica todo lo aprendido.'
 				buttonText='Conoce más'
-				image={banca}
+				image={bancaImage}
 				buttonLink='/banca'
 			/>
 			<ProjectsCard

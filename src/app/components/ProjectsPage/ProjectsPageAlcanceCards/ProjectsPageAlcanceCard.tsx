@@ -21,14 +21,8 @@ const ProjectsPageAlcanceCard = ({
 				<TextB1>{titulo}</TextB1>
 			</div>
 			<div className=' flex xl:hidden'>
-				{/* <TextR3>{text.map((text, i) => <li key={i}>{text}</li>)}</TextR3> */}
-				<TextR3>
-					<ul className='list-disc list-inside'>
-						{text.map((t, i) => (
-							<li key={i}>{t}</li>
-						))}
-					</ul>
-				</TextR3>
+				 <TextR3>{text.map((text, i) => <li key={i}>{text}</li>)}</TextR3> 
+				
 			</div>
 			<div className='my-4 xl:flex hidden'>
 				<TextB1>{titulo}</TextB1>
