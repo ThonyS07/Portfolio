@@ -38,7 +38,7 @@ const page = () => {
 						frameURL='https://embed.figma.com/design/xGYDzgO1snXpYLrvjCrulF/Taxitel?node-id=3-1304&embed-host=share'
 						embedURL='https://embed.figma.com/design/xGYDzgO1snXpYLrvjCrulF/Taxitel?node-id=0-1&embed-host=share'
 						embedTitle='App pasajeros'
-						frameTitle='App conductor'	
+						frameTitle='App conductor'
 					/>
 					<div className=' sm:px-[25px] md:px-[42px] lg:px-[52px] xl:px-[104px]'>
 						{/* <Projects />
