@@ -7,7 +7,7 @@ import { TextSB2 } from "@/app/format/SemiBoldTypography";
 
 const ProgressBar = ({ level, text }: { level: number; text: string }) => {
 	return (
-		<div className='sm:w-[328px] sm:h-[56px] md:w-[680px]  lg:w-[564px] xl:w-[744px] h-[60px]'>
+		<div className='sm:w-[328px] sm:h-14 md:w-[680px]  lg:w-[564px] xl:w-[744px] h-[60px]'>
 			<div className="mb-4">
 				<TextSB2>{text}</TextSB2>
 				

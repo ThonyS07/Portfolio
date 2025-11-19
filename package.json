@@ -27,5 +27,8 @@
 		"tailwindcss": "^4.1.17",
 		"typeface-lato": "^1.1.13",
 		"typescript": "5.2.2"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "^4.1.17"
 	}
 }
