@@ -4,7 +4,8 @@ import ProjectPageTitle from "./ProjectPageTitle";
 import ProjectsPageDescription from "./ProjectPageDescription";
 import ProjectsPageImage from "./ProjectsPageImage";
 
-const ProjectsPageContent = ({ title, image, description }:{title: string, image: StaticImageData, description: string}) => {
+const ProjectsPageContent = ({ title, image, description }: { title: string, image: StaticImageData, description: string }) => {
+	console.log(`soy ${title} yo ${image} y yo ${description}`)
 	return (
 		<div className='flex flex-col md:flex-row justify-between items-center gap-6 '>
 			<div className='md:w-[50%]'>

@@ -1,12 +1,20 @@
 "use client";
+
+
 import React from "react";
 import NavBar from "../components/NavBar/NavBar";
 import taxiImage from "@/assets/img/porta/Taxis/01 01 01 portada.png";
 import ProjectsPageContent from "../components/ProjectsPage/ProjectsPageContent";
-
 import ProjectsPageAlcance from "../components/ProjectsPage/ProjectsPageAlcance";
 
-const page = () => {
+const BancaPage = () => {
+	console.log("Imports:", {
+		A: React,
+		B: NavBar,
+		C: ProjectsPageContent,	
+		D: taxiImage,
+		E: ProjectsPageAlcance
+	});
 	const stakeholders = [
 		"Product owner",
 		"Especialista en productos",
@@ -53,4 +61,4 @@ En la actualidad Banca empresas es el sector con menos soluciones tecnológicas 
 	);
 };
 
-export default page;
+export default BancaPage;

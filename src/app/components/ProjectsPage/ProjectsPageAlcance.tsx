@@ -25,11 +25,16 @@ const ProjectsPageAlcance = ({
 	embedTitle,
 	frameTitle,
 }: ProjectsPageAlcanceProps) => {
+
+	console.log(
+		`soy ${embedTitle} y yo ${embedURL} yo ${frameTitle} y yo ${frameURL}`
+	);
 	const renderFrame = (frameURL: string): string => {
 		if (!frameURL)
 			return ''
 		return frameURL
 	};
+	console.log(`soy ${embedTitle} y yo ${embedURL} yo ${frameTitle} y yo ${frameURL}`)
 	const renderFrameTitle = (frameTitle: string): string => {
 		if (!frameTitle) return ''
 		return frameTitle
@@ -51,10 +56,10 @@ const ProjectsPageAlcance = ({
 				<Frames url={embedURL}></Frames>
 			</div>
 			<div className=''>
-				<HeaderBl5>{frameTitle}</HeaderBl5>
+				{frameTitle && <HeaderBl5>{renderFrameTitle(frameTitle)}</HeaderBl5>}
 			</div>
 			<div className='flex flex-col max-[768px]:mb-10 mb-14 mt-6 w-full items-center'>
-			<Frames url={frameURL && renderFrame(frameURL) || ''}></Frames>
+				{frameURL && <Frames url={renderFrame(frameURL)}></Frames>}
 			</div>
 		</div>
 	);
