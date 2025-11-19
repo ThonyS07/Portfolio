@@ -25,6 +25,15 @@ const ProjectsPageAlcance = ({
 	embedTitle,
 	frameTitle,
 }: ProjectsPageAlcanceProps) => {
+	const renderFrame = (frameURL: string): string => {
+		if (!frameURL)
+			return ''
+		return frameURL
+	};
+	const renderFrameTitle = (frameTitle: string): string => {
+		if (!frameTitle) return ''
+		return frameTitle
+	};
 	return (
 		<div className='flex flex-col w-full  sm:my-12 md:my-16 xl:my-14'>
 			<HeaderBl5>Alcance</HeaderBl5>
@@ -45,7 +54,7 @@ const ProjectsPageAlcance = ({
 				<HeaderBl5>{frameTitle}</HeaderBl5>
 			</div>
 			<div className='flex flex-col max-[768px]:mb-10 mb-14 mt-6 w-full items-center'>
-			 {frameURL && <Frames url={frameURL}></Frames>}
+			<Frames url={frameURL && renderFrame(frameURL) || ''}></Frames>
 			</div>
 		</div>
 	);

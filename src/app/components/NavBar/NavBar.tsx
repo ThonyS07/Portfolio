@@ -71,7 +71,7 @@ const NavBar = () => {
 					className='max-[1024px]:flex max-[1024px]:gap-6 max-[1024px]:w-[110px] max-[1024px]:h-6 max-[1024px]:flex-row max-[1024px]:justify-start max-[1024px]:items-start'
 					justify='end'>
 					<ThemeSwitcher />
-					<div className='lg:hidden w-px h-6 bg-[#1a1d2c] dark:bg-blanco '></div>
+					<div className='lg:hidden w-px h-6 bg-github dark:bg-blanco '></div>
 					<div className='lg:hidden'>
 						<HamburguerButton />
 					</div>
