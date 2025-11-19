@@ -7,7 +7,7 @@ import logo from "@/assets/img/logoandrea.png";
 
 const Logo = () => {
 	return (
-		<div className='flex h-[42px]'>
+		<div className='flex h-42'>
 			<Image src={logo} alt='logo' width={42} height={40} />
 		</div>
 	);

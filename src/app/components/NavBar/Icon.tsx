@@ -1,7 +1,7 @@
 import { ButtonM } from "@/app/format/ButtonsTypography";
 import * as React from "react";
 const Icon = () => (
-	<div className='flex max-w-[100%]'>
+	<div className='flex max-w-full'>
 		Descargar CV
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
