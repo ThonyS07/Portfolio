@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@heroui/navbar": "^2.2.25",
+    "@heroui/react": "^2.8.5",
     "@heroui/system": "^2.4.23",
     "@heroui/theme": "^2.4.23",
-    "@nextui-org/react": "^2.1.13",
     "@prisma/client": "^5.9.1",
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
