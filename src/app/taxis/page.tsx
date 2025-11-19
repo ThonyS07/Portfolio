@@ -40,7 +40,7 @@ const page = () => {
 						embedTitle='App pasajeros'
 						frameTitle='App conductor'
 					/>
-					<div className=' sm:px-[25px] md:px-[42px] lg:px-[52px] xl:px-[104px]'>
+					<div className=' sm:px-25 md:px-42 lg:px-52 xl:px-104'>
 						{/* <Projects />
 					
 						<div className='flex-col justify-center items-center'>
