@@ -3,7 +3,7 @@ import { NavbarItem } from "@heroui/navbar";
 import Link from "next/link";
 
 
-export const Tabs = (props: NavBarProps) => {
+const Tabs = (props: NavBarProps) => {
     const { activeSection, onSectionClick, children } = props;
     const formatChildren = children?.toLocaleString()
     const visibleContent = formatChildren
@@ -22,3 +22,4 @@ export const Tabs = (props: NavBarProps) => {
 		</NavbarItem>
 	);
 };
+export default Tabs;
