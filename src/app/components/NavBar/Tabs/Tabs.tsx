@@ -16,7 +16,7 @@ export const Tabs = (props: NavBarProps) => {
 				onClick={() => onSectionClick(`${children}`)}
 				className={`pl-0 h-[20px] ${activeSection === children ? "underline" : ""}`}
 				color='foreground'
-				href={`#${children}`}>
+				href={`/#${children}`}>
 				{visibleContent}
 			</Link>
 		</NavbarItem>

@@ -1,5 +1,5 @@
-import {heroui} from '@heroui/theme';
-import { nextui } from "@nextui-org/react";
+
+import { heroui } from "@heroui/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -106,7 +106,7 @@ const config: Config = {
 		},
 	},
 	darkMode: "class",
-  plugins: [nextui({
+  plugins: [heroui({
 			themes: {
 				light: {
 					layout: {},colors: {},},dark: {

@@ -7,23 +7,48 @@ import { HeaderBl5, TextBl1 } from "@/app/format/BlackTypography";
 import ProjectsPageAlcanceCards from "./ProjectsPageAlcanceCards";
 import Frames from "../Frames/Frames";
 
-const ProjectsPageAlcance = () => {
+interface ProjectsPageAlcanceProps { 
+	stakeHolders: string[];
+	metodologia: string[];
+	equipo: string[];
+	kpis: string[];
+	frameURL?: string;
+	embedURL: string;
+	embedTitle: string;
+	frameTitle?: string;
+}
+
+const ProjectsPageAlcance = ({
+	stakeHolders,
+	metodologia,
+	equipo,
+	kpis,
+	frameURL,
+	embedURL,
+	embedTitle,
+	frameTitle,
+}: ProjectsPageAlcanceProps) => {
 	return (
 		<div className='flex flex-col w-full  sm:my-[48px] md:my-[64px] xl:my-[56px]'>
 			<HeaderBl5>Alcance</HeaderBl5>
 			<div className='flex flex-col max-[768px]:mb-[40px] mb-[56px] w-full items-center'>
 				<div className='mb-[32px] flex flex-col items-center'></div>
-				<ProjectsPageAlcanceCards />
+				<ProjectsPageAlcanceCards
+					stakeHolders={stakeHolders}
+					metodologia={metodologia}
+					equipo={equipo}
+					kpis={kpis}
+				/>
 			</div>
-			<HeaderBl5>App Pasajeros</HeaderBl5>
+			<HeaderBl5>{embedTitle}</HeaderBl5>
 			<div className='flex flex-col max-[768px]:mb-[40px] mb-[56px]  mt-[24px] w-full items-center'>
-				<Frames url='https://embed.figma.com/design/xGYDzgO1snXpYLrvjCrulF/Taxitel?node-id=0-1&embed-host=share'></Frames>
+				<Frames url={embedURL}></Frames>
 			</div>
 			<div className=''>
-				<HeaderBl5>App Conductor</HeaderBl5>
+				<HeaderBl5>{frameTitle}</HeaderBl5>
 			</div>
 			<div className='flex flex-col max-[768px]:mb-[40px] mb-[56px] mt-[24px] w-full items-center'>
-				<Frames url='https://embed.figma.com/design/xGYDzgO1snXpYLrvjCrulF/Taxitel?node-id=3-1304&embed-host=share'></Frames>
+			 {frameURL && <Frames url={frameURL}></Frames>}
 			</div>
 		</div>
 	);

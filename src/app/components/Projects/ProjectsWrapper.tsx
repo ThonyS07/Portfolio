@@ -1,15 +1,11 @@
 import React from "react";
-import { TextL1 } from "@/app/format/LightTypography";
-import { HeaderBl5, TextBl1 } from "@/app/format/BlackTypography";
 import ProjectsCard from "../Cards/ProjectsCard";
 // import viaje from '@/assets/img/viaje.svg'
 import banca from "@/assets/img/Appbancaria.png";
 import seguros from "@/assets/img/porta/Proyectos/Webparaseguros.png";
 import animalista from "@/assets/img/Webparaveterinarias.png";
 import transporte from "@/assets/img/porta/Taxis/01 01 01 portada.png";
-import ecommerce from "@/assets/img/Ecommerce.png";
-import chatbot from "@/assets/img/ChatBotparadelivery.png";
-import Frames from "../Frames/Frames";
+
 
 const ProjectsWrapper = () => {
 	return (
@@ -28,7 +24,7 @@ const ProjectsWrapper = () => {
 				text='Después de algunos años trabajando para 2 bancos, decidí tomar de referencia mi experiencia para poner en práctica todo lo aprendido.'
 				buttonText='Conoce más'
 				image={banca}
-				buttonLink='https://www.figma.com/proto/18hCQUPmcXH7dpGCVBv6GR/Portfolio?type=design&node-id=429-2022&t=F0NCXdbOJjYMX4Gb-1&scaling=min-zoom&page-id=104%3A497&mode=design'
+				buttonLink='/banca'
 			/>
 			<ProjectsCard
 				titulo='Web para veterinarias'

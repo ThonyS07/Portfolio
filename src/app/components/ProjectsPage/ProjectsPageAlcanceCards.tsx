@@ -6,17 +6,14 @@ import MetodoIcon from "./ProjectsPageAlcanceCards/Icons/metodoIcon";
 import EquipoIcon from "./ProjectsPageAlcanceCards/Icons/equipoIcon";
 import KpisIcon from "./ProjectsPageAlcanceCards/Icons/kpisIcon";
 
-const ProjectsPageAlcanceCards = () => {
-	const stakeholders = ["Gerente General taxitel", "Área de Marketing"];
-	const metodologia = ["Design thinking", "Scrum"];
-	const equipo = ["2 UX/UI Designers", "1 Full Stack Developer "];
-	const kpis = ["Tasa de conversión", "Tasa de retención", "Aumento de pedidos por App"];
+const ProjectsPageAlcanceCards = ({stakeHolders, metodologia, equipo, kpis}:{stakeHolders: string[], metodologia: string[], equipo: string[], kpis: string[]}) => {
+	
 
 	return (
 		<div>
 			<div className='flex items-center justify-center flex-col w-full md:w-[684px] lg:w-full gap-[24px] md:flex-row xl:mx-[104px] md:flex-wrap lg:flex-nowrap'>
 				<div>
-					<ProjectsPageAlcanceCard titulo='Stakeholder' text={stakeholders}>
+					<ProjectsPageAlcanceCard titulo='Stakeholder' text={stakeHolders}>
 						<StakeIcon />
 					</ProjectsPageAlcanceCard>
 				</div>
