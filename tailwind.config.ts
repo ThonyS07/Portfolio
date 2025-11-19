@@ -1,13 +1,15 @@
+import {heroui} from '@heroui/theme';
 import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-	content: [
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-	],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/components/navbar.js"
+  ],
 	theme: {
 		screens: {
 			sm: "360px",
@@ -104,20 +106,11 @@ const config: Config = {
 		},
 	},
 	darkMode: "class",
-	plugins: [
-		nextui({
+  plugins: [nextui({
 			themes: {
 				light: {
-					layout: {},
-					colors: {},
-				},
-				dark: {
-					layout: {},
-					colors: {},
-				},
-			},
-		}),
-	],
+					layout: {},colors: {},},dark: {
+					layout: {},colors: {},},},}),heroui()],
 };
 
 export default config;

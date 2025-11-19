@@ -1,5 +1,5 @@
 import { NavBarProps } from "@/Props/NavBarProps";
-import { NavbarItem } from "@nextui-org/react";
+import { NavbarItem } from "@heroui/navbar";
 import Link from "next/link";
 
 

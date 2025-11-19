@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/navbar": "^2.2.25",
+    "@heroui/system": "^2.4.23",
+    "@heroui/theme": "^2.4.23",
     "@nextui-org/react": "^2.1.13",
     "@prisma/client": "^5.9.1",
     "@types/node": "20.6.3",
@@ -18,7 +21,7 @@
     "classnames": "^2.5.1",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.2",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^12.23.24",
     "next": "13.5.2",
     "next-themes": "^0.2.1",
     "postcss": "8.4.30",

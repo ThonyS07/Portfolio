@@ -2,7 +2,7 @@
 import ThemeSwitcher from "@/app/components/NavBar/ThemeSwitcher/ThemeSwitcher";
 import Link from "next/link";
 import React, { useState } from "react";
-import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/navbar";
+import { Navbar, NavbarBrand, NavbarContent } from "@heroui/navbar";
 import Logo from "./Logo";
 import { Tabs } from "@/app/components/NavBar/Tabs/Tabs";
 import Button from "../Buttons/Button";
@@ -13,19 +13,18 @@ import HamburguerButton from "./MenuIcon";
 
 const NavBar = () => {
 	const [activeSection, setActiveSection] = useState("");
-	
 
-const handleDownloadCVPublic = () => {
-    const filePath = "/CVAndrea.pdf"; // Ruta correcta
+	const handleDownloadCVPublic = () => {
+		const filePath = "/CVAndrea.pdf"; // Ruta correcta
 
-    // Crear un enlace temporal
-    const link = document.createElement("a");
-    link.href = filePath;
-    link.download = "CVAndrea.pdf"; // Forzar la descarga con este nombre
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-};
+		// Crear un enlace temporal
+		const link = document.createElement("a");
+		link.href = filePath;
+		link.download = "CVAndrea.pdf"; // Forzar la descarga con este nombre
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	};
 
 	const handleSectionClick = (sectionId: string) => {
 		setActiveSection(sectionId);
@@ -69,7 +68,6 @@ const handleDownloadCVPublic = () => {
 				</NavbarContent>
 			</div>
 			<div>
-				{}
 				<NavbarContent
 					className='max-[1024px]:flex max-[1024px]:gap-6 max-[1024px]:w-[110px] max-[1024px]:h-[24px] max-[1024px]:flex-row max-[1024px]:justify-start max-[1024px]:items-start'
 					justify='end'>
@@ -79,11 +77,9 @@ const handleDownloadCVPublic = () => {
 						<HamburguerButton />
 					</div>
 					<div className='hidden lg:flex'>
-						
-					 	<Button onClick={handleDownloadCVPublic} size='l'>
+						<Button onClick={handleDownloadCVPublic} size='l'>
 							Descargar CV
 						</Button>
-						
 					</div>
 				</NavbarContent>
 			</div>
