@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsPageAlcanceCard from "./ProjectsPageAlcanceCards/ProjectsPagesAlcanceCard";
+import ProjectsPageAlcanceCard from "./ProjectsPageAlcanceCards/ProjectsPageAlcanceCard";
 import StakeIcon from "./ProjectsPageAlcanceCards/Icons/stakeIcon";
 import MetodoIcon from "./ProjectsPageAlcanceCards/Icons/metodoIcon";
 import EquipoIcon from "./ProjectsPageAlcanceCards/Icons/equipoIcon";

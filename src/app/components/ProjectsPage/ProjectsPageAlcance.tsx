@@ -52,14 +52,22 @@ const ProjectsPageAlcance = ({
 				/>
 			</div>
 			<HeaderBl5>{embedTitle}</HeaderBl5>
-			<div className='flex flex-col max-[768px]:mb-10 mb-14  mt-6 w-full items-center'>
-				<Frames url={embedURL}></Frames>
+			<HeaderBl5>{embedTitle}</HeaderBl5>
+
+			{/* CONTENEDOR RESPONSIVE */}
+			<div className='w-full flex justify-center mt-6 mb-14'>
+				<div className='w-full max-w-5xl'>
+					<Frames url={embedURL} />
+				</div>
 			</div>
-			<div className=''>
-				{frameTitle && <HeaderBl5>{renderFrameTitle(frameTitle)}</HeaderBl5>}
-			</div>
-			<div className='flex flex-col max-[768px]:mb-10 mb-14 mt-6 w-full items-center'>
-				{frameURL && <Frames url={renderFrame(frameURL)}></Frames>}
+
+			{frameTitle && <HeaderBl5>{frameTitle}</HeaderBl5>}
+
+			{/* CONTENEDOR RESPONSIVE */}
+			<div className='w-full flex justify-center mt-6 mb-14'>
+				<div className='w-full max-w-5xl'>
+					{frameURL && <Frames url={frameURL} />}
+				</div>
 			</div>
 		</div>
 	);
